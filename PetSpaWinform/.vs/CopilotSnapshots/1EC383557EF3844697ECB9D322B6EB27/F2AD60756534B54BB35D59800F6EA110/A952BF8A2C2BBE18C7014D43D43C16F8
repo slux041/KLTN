@@ -1,0 +1,288 @@
+﻿using System;
+using System.Data;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace GD
+{
+    public partial class QLSP : Form
+    {
+        private readonly string connectionString = "Server=127.0.0.1;Database=SpaThuCung;user=root;password=;";
+        private DataTable dtSanPham;
+        private DataView dvSanPham;
+
+        public QLSP()
+        {
+            InitializeComponent();
+            LoadSanPham();
+            dgvSanPham.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvSanPham.MultiSelect = false;
+            dgvSanPham.ReadOnly = true;
+            ClearFields();
+            SetupDataGridView();
+        }
+        private void SetupDataGridView()
+        {
+            var dgv = dgvSanPham;
+
+            dgv.BorderStyle = BorderStyle.None;
+            dgv.BackgroundColor = Color.White;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // Header
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(30, 144, 255);
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+            dgv.ColumnHeadersHeight = 40;
+
+            // Dòng
+            dgv.DefaultCellStyle.Font = new Font("Segoe UI", 11);
+            dgv.DefaultCellStyle.BackColor = Color.White;
+            dgv.DefaultCellStyle.ForeColor = Color.Black;
+            dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(255, 230, 150);
+            dgv.DefaultCellStyle.SelectionForeColor = Color.Black;
+
+            // Dòng xen kẽ
+            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 245, 245);
+
+            // Viền ô
+            dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgv.GridColor = Color.LightGray;
+
+            // Không sửa trực tiếp
+            dgv.ReadOnly = true;
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            // Ẩn row header
+            dgv.RowHeadersVisible = false;
+
+            // Chiều cao dòng
+            dgv.RowTemplate.Height = 35;
+        }
+
+        private void LoadSanPham()
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    // CHỈ LẤY DỮ LIỆU TỪ BẢNG SanPham → KHÔNG JOIN
+                    string query = @"
+                        SELECT MaSP, TenSP, MoTa, GiaNhap, GiaBan, 
+                               SoLuongTon, LoaiSP, MaNCC
+                        FROM SanPham
+                        ORDER BY MaSP";
+
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
+                    dtSanPham = new DataTable();
+                    adapter.Fill(dtSanPham);
+
+                    dvSanPham = new DataView(dtSanPham);
+                    dgvSanPham.DataSource = dvSanPham;
+
+                    // Đặt tiêu đề cột
+                    dgvSanPham.Columns["MaSP"].HeaderText = "Mã sản phẩm";
+                    dgvSanPham.Columns["TenSP"].HeaderText = "Tên sản phẩm";
+                    dgvSanPham.Columns["MoTa"].HeaderText = "Mô tả";
+                    dgvSanPham.Columns["GiaNhap"].HeaderText = "Giá nhập";
+                    dgvSanPham.Columns["GiaBan"].HeaderText = "Giá bán";
+                    dgvSanPham.Columns["SoLuongTon"].HeaderText = "Số lượng tồn";
+                    dgvSanPham.Columns["LoaiSP"].HeaderText = "Loại sản phẩm";
+                    dgvSanPham.Columns["MaNCC"].HeaderText = "Mã NCC";
+
+                    // Tự động điều chỉnh cột
+                    dgvSanPham.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối CSDL: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void dgvSanPham_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvSanPham.CurrentRow != null && dgvSanPham.CurrentRow.Cells["MaSP"].Value != null)
+            {
+                var row = dgvSanPham.CurrentRow;
+
+                txtMaSP.Text = row.Cells["MaSP"].Value?.ToString() ?? "";
+                txtTenSP.Text = row.Cells["TenSP"].Value?.ToString() ?? "";
+                txtMoTa.Text = row.Cells["MoTa"].Value?.ToString() ?? "";
+                txtGiaNhap.Text = row.Cells["GiaNhap"].Value?.ToString() ?? "";
+                txtGiaBan.Text = row.Cells["GiaBan"].Value?.ToString() ?? "";
+                txtSL.Text = row.Cells["SoLuongTon"].Value?.ToString() ?? "";
+                txtLoai.Text = row.Cells["LoaiSP"].Value?.ToString() ?? "";
+                txtMaNCC.Text = row.Cells["MaNCC"].Value?.ToString() ?? "";
+            }
+        }
+
+        private void txtTimkiemMa_TextChanged(object sender, EventArgs e)
+        {
+            if (dvSanPham == null) return;
+
+            string keyword = txtTimkiemMa.Text.Trim().Replace("'", "''");
+
+            if (string.IsNullOrEmpty(keyword))
+                dvSanPham.RowFilter = "";
+            else
+                dvSanPham.RowFilter = $"MaSP LIKE '%{keyword}%'";
+
+            // Tự động chọn dòng đầu tiên nếu có kết quả
+            if (dgvSanPham.Rows.Count > 0)
+            {
+                dgvSanPham.Rows[0].Selected = true;
+                dgvSanPham.CurrentCell = dgvSanPham.Rows[0].Cells[0];
+            }
+        }
+
+        private void txtTimKiemTen_TextChanged(object sender, EventArgs e)
+        {
+            if (dvSanPham == null) return;
+
+            string keyword = txtTimKiemTen.Text.Trim().Replace("'", "''");
+
+            if (string.IsNullOrEmpty(keyword))
+            {
+                dvSanPham.RowFilter = ""; // Hiện tất cả nếu chưa nhập
+            }
+            else
+            {
+                dvSanPham.RowFilter = $"TenSP LIKE '%{keyword}%'";
+            }
+
+            // Tự động chọn dòng đầu tiên nếu có kết quả
+            if (dgvSanPham.Rows.Count > 0)
+            {
+                dgvSanPham.Rows[0].Selected = true;
+                dgvSanPham.CurrentCell = dgvSanPham.Rows[0].Cells[0];
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = @"INSERT INTO SanPham 
+                            (MaSP, TenSP, MoTa, GiaNhap, GiaBan, SoLuongTon, LoaiSP, MaNCC)
+                            VALUES (@MaSP, @TenSP, @MoTa, @GiaNhap, @GiaBan, @SoLuongTon, @LoaiSP, @MaNCC)";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@MaSP", txtMaSP.Text.Trim());
+                        cmd.Parameters.AddWithValue("@TenSP", txtTenSP.Text.Trim());
+                        cmd.Parameters.AddWithValue("@MoTa", txtMoTa.Text.Trim());
+                        cmd.Parameters.AddWithValue("@GiaNhap", Convert.ToDecimal(txtGiaNhap.Text));
+                        cmd.Parameters.AddWithValue("@GiaBan", Convert.ToDecimal(txtGiaBan.Text));
+                        cmd.Parameters.AddWithValue("@SoLuongTon", Convert.ToInt32(txtSL.Text));
+                        cmd.Parameters.AddWithValue("@LoaiSP", txtLoai.Text.Trim());
+                        cmd.Parameters.AddWithValue("@MaNCC", txtMaNCC.Text.Trim());
+
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show(" Thêm sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadSanPham();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(" Lỗi khi thêm sản phẩm: " + ex.Message);
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtMaSP.Text))
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần xóa!");
+                return;
+            }
+
+            var confirm = MessageBox.Show("Bạn có chắc muốn xóa sản phẩm này không?",
+                                          "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirm == DialogResult.No)
+                return;
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "DELETE FROM SanPham WHERE MaSP = @MaSP";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@MaSP", txtMaSP.Text.Trim());
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show(" Xóa sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadSanPham();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(" Lỗi khi xóa sản phẩm: " + ex.Message);
+            }
+        }
+        private void ClearFields()
+        {
+            txtMaSP.Clear();
+            txtTenSP.Clear();
+            txtMoTa.Clear();
+            txtGiaNhap.Clear();
+            txtGiaBan.Clear();
+            txtSL.Clear();
+            txtLoai.Clear();
+            txtMaNCC.Clear();
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtMaSP.Text))
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần sửa!");
+                return;
+            }
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = @"UPDATE SanPham
+                             SET TenSP=@TenSP, MoTa=@MoTa, GiaNhap=@GiaNhap, GiaBan=@GiaBan,
+                                 SoLuongTon=@SoLuongTon, LoaiSP=@LoaiSP, MaNCC=@MaNCC
+                             WHERE MaSP=@MaSP";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@MaSP", txtMaSP.Text.Trim());
+                        cmd.Parameters.AddWithValue("@TenSP", txtTenSP.Text.Trim());
+                        cmd.Parameters.AddWithValue("@MoTa", txtMoTa.Text.Trim());
+                        cmd.Parameters.AddWithValue("@GiaNhap", Convert.ToDecimal(txtGiaNhap.Text));
+                        cmd.Parameters.AddWithValue("@GiaBan", Convert.ToDecimal(txtGiaBan.Text));
+                        cmd.Parameters.AddWithValue("@SoLuongTon", Convert.ToInt32(txtSL.Text));
+                        cmd.Parameters.AddWithValue("@LoaiSP", txtLoai.Text.Trim());
+                        cmd.Parameters.AddWithValue("@MaNCC", txtMaNCC.Text.Trim());
+
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show(" Cập nhật sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadSanPham();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(" Lỗi khi sửa sản phẩm: " + ex.Message);
+            }
+        }
+    }
+}

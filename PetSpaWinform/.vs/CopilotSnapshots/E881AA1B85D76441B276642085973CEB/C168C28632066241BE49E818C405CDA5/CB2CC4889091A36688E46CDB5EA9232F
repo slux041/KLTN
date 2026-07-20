@@ -1,0 +1,194 @@
+﻿using System;
+using System.Data;
+using System.Linq;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace GD
+{
+    public partial class ThongKe : Form
+    {
+        private readonly string connectionString = "Server=127.0.0.1;Database=spathucung;user=root;password=;";
+
+        // keep last loaded data to compute totals
+        private DataTable _currentData;
+
+        public ThongKe()
+        {
+            InitializeComponent();
+            this.Load += ThongKe_Load;  
+        }
+
+
+        private string GetQueryLichHen(string dk)
+        {
+            return $@"
+                SELECT 
+                    ttlh.MaTT AS Ma,
+                    ttlh.NgayTT AS ThoiGian,
+                    lh.MaKH AS KhachHang,
+                    ttlh.SoTien AS SoTien,
+                    lh.MaNV AS NhanVien
+                FROM ThanhToanLichHen ttlh
+                JOIN LichHen lh ON ttlh.MaLich = lh.MaLich
+                {dk}
+            ";
+        }
+        private string GetQueryPOS(string dk)
+        {
+            return $@"
+                SELECT 
+                    HoaDon.MaHD AS Ma,
+                    HoaDon.NgayLap AS ThoiGian,
+                    HoaDon.MaKH AS KhachHang,
+                    SUM(ChiTietHoaDon.SoLuong * ChiTietHoaDon.DonGia) AS SoTien,
+                    HoaDon.MaNV AS NhanVien
+                FROM HoaDon
+                JOIN ChiTietHoaDon ON HoaDon.MaHD = ChiTietHoaDon.MaHD
+                {dk}
+                GROUP BY HoaDon.MaHD, HoaDon.NgayLap, HoaDon.MaKH, HoaDon.MaNV
+            ";
+        }
+
+        private void LoadDoanhThu(string cheDo)
+        {
+            string dkLichHen = "";
+            string dkPOS = "";
+
+            if (cheDo == "Hôm nay")
+            {
+                dkLichHen = "WHERE DATE(ttlh.NgayTT) = CURDATE()";
+                dkPOS = "WHERE DATE(HoaDon.NgayLap) = CURDATE()";
+            }
+            else if (cheDo == "7 ngày trước")
+            {
+                dkLichHen = "WHERE ttlh.NgayTT >= CURDATE() - INTERVAL 7 DAY";
+                dkPOS = "WHERE HoaDon.NgayLap >= CURDATE() - INTERVAL 7 DAY";
+            }
+            else if (cheDo == "1 tháng trước")
+            {
+                dkLichHen = "WHERE ttlh.NgayTT >= CURDATE() - INTERVAL 30 DAY";
+                dkPOS = "WHERE HoaDon.NgayLap >= CURDATE() - INTERVAL 30 DAY";
+            }
+            else
+            {
+                dkLichHen = "";
+                dkPOS = "";
+            }
+
+            string query = $@"
+                SELECT * FROM (
+                    {GetQueryLichHen(dkLichHen)}
+                    UNION ALL
+                    {GetQueryPOS(dkPOS)}
+                ) AS TongHop
+                ORDER BY ThoiGian DESC
+            ";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlDataAdapter da = new MySqlDataAdapter(query, conn))
+            {
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                _currentData = dt; // store for later calculations
+
+                dgvDoanhThu.DataSource = dt;
+
+                if (dt.Rows.Count == 0)
+                {
+                    lblNgay.Text = "Không có dữ liệu.";
+                    lblTongdoanhthu.Text = "0 đ";
+                    return;
+                }
+
+                // Đặt tên cột
+                if (dgvDoanhThu.Columns.Contains("Ma"))
+                    dgvDoanhThu.Columns["Ma"].HeaderText = "Mã";
+                if (dgvDoanhThu.Columns.Contains("ThoiGian"))
+                    dgvDoanhThu.Columns["ThoiGian"].HeaderText = "Thời gian";
+                if (dgvDoanhThu.Columns.Contains("KhachHang"))
+                    dgvDoanhThu.Columns["KhachHang"].HeaderText = "Khách hàng";
+                if (dgvDoanhThu.Columns.Contains("SoTien"))
+                {
+                    dgvDoanhThu.Columns["SoTien"].HeaderText = "Số tiền";
+                    dgvDoanhThu.Columns["SoTien"].DefaultCellStyle.Format = "#,###";
+                    dgvDoanhThu.Columns["SoTien"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                }
+                if (dgvDoanhThu.Columns.Contains("NhanVien"))
+                    dgvDoanhThu.Columns["NhanVien"].HeaderText = "Nhân viên";
+
+                // Tính tổng doanh thu cho dữ liệu đang hiển thị
+                try
+                {
+                    decimal total = 0m;
+                    if (dt.Columns.Contains("SoTien"))
+                    {
+                        total = dt.AsEnumerable()
+                                  .Where(r => r["SoTien"] != DBNull.Value)
+                                  .Sum(r => Convert.ToDecimal(r["SoTien"]));
+                    }
+
+                    lblTongdoanhthu.Text = string.Format("{0:N0} đ", total);
+                }
+                catch
+                {
+                    lblTongdoanhthu.Text = "0 đ";
+                }
+            }
+        }
+        private void ThongKe_Load(object sender, EventArgs e)
+        {
+            cmbDoanhThu.Items.Add("Hôm nay");
+            cmbDoanhThu.Items.Add("7 ngày trước");
+            cmbDoanhThu.Items.Add("1 tháng trước");
+            cmbDoanhThu.Items.Add("Tất cả");
+
+            cmbDoanhThu.SelectedIndex = 3;
+            cmbDoanhThu.SelectedIndex = -1;
+            cmbDoanhThu.Text = "";
+
+            LoadDoanhThu("Tất cả");
+        }
+
+        private void cmbDoanhThu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbDoanhThu.SelectedItem != null)
+                LoadDoanhThu(cmbDoanhThu.SelectedItem.ToString());
+        }
+
+        private void dgvDoanhThu_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && _currentData != null)
+            {
+                var cell = dgvDoanhThu.Rows[e.RowIndex].Cells["ThoiGian"];
+                if (cell?.Value != null)
+                {
+                    // Hiển thị thời gian
+                    string tg = cell.Value.ToString();
+                    lblNgay.Text = "Thời gian: " + tg;
+
+                    // Tính tổng doanh thu cho ngày được chọn (so sánh theo ngày)
+                    DateTime parsed;
+                    if (DateTime.TryParse(tg, out parsed))
+                    {
+                        DateTime dateOnly = parsed.Date;
+                        try
+                        {
+                            var rowsSameDate = _currentData.AsEnumerable()
+                                .Where(r => r["ThoiGian"] != DBNull.Value)
+                                .Where(r => DateTime.TryParse(r["ThoiGian"].ToString(), out var d) && d.Date == dateOnly);
+
+                            decimal totalDay = rowsSameDate.Sum(r => Convert.ToDecimal(r["SoTien"]));
+                            lblTongdoanhthu.Text = string.Format("{0:N0} đ", totalDay);
+                        }
+                        catch
+                        {
+                            // ignore
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

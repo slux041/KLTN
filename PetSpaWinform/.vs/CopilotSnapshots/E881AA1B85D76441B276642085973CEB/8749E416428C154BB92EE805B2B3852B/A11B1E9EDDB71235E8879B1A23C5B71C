@@ -1,0 +1,357 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace GD
+{
+    public partial class QLLichHen : Form
+    {
+        private readonly string connectionString = "Server=127.0.0.1;Database=spathucung;user=root;password=;";
+        public QLLichHen()
+        {
+            InitializeComponent();
+            LoadLichHen();
+            LoadTrangThaiComboBox();
+            SetupDataGridView();
+        }
+        private void LoadTrangThaiComboBox()
+        {
+            cbTrangThai.Items.Clear();
+            cbTrangThai.Items.Add("Chờ xác nhận");
+            cbTrangThai.Items.Add("Đã xác nhận");
+            cbTrangThai.Items.Add("Hoàn thành");
+            cbTrangThai.Items.Add("Đã hủy");
+            cbTrangThai.SelectedIndex = 0; // mặc định chọn dòng đầu
+        }
+        private void SetupDataGridView()
+        {
+            var dgv = dgvQLLichHen;
+
+            dgv.BorderStyle = BorderStyle.None;
+            dgv.BackgroundColor = Color.White;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // Header
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(30, 144, 255);
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+            dgv.ColumnHeadersHeight = 40;
+
+            // Dòng
+            dgv.DefaultCellStyle.Font = new Font("Segoe UI", 11);
+            dgv.DefaultCellStyle.BackColor = Color.White;
+            dgv.DefaultCellStyle.ForeColor = Color.Black;
+            dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(255, 230, 150);
+            dgv.DefaultCellStyle.SelectionForeColor = Color.Black;
+
+            // Dòng xen kẽ
+            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 245, 245);
+
+            // Viền ô
+            dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgv.GridColor = Color.LightGray;
+
+            // Không sửa trực tiếp
+            dgv.ReadOnly = true;
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            // Ẩn row header
+            dgv.RowHeadersVisible = false;
+
+            // Chiều cao dòng
+            dgv.RowTemplate.Height = 35;
+        }
+        private void LoadLichHen()
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string sql = @"
+                        SELECT 
+                            a.appointment_id AS MaLichHen,
+                            DATE_FORMAT(a.appointment_date, '%d/%m/%Y %H:%i') AS ThoiGian,
+                            a.time_slot AS KhungGio,
+                            a.status,
+                            a.service_id AS MaDichVu,
+                            c.customer_id AS MaKhachHang,
+                            COALESCE(p.name, 'Chưa chọn thú cưng') AS ThongTinThuCung
+                        FROM appointments a
+                        INNER JOIN customers c ON a.customer_id = c.customer_id
+                        LEFT JOIN pets p ON a.pet_id = p.pet_id  -- LEFT JOIN để hiện cả khi chưa có thú cưng
+                        WHERE (@keyword = '' 
+                            OR a.appointment_id LIKE @keyword 
+                            OR c.customer_id LIKE @keyword 
+                            OR p.name LIKE @keyword)
+                        ORDER BY a.appointment_date DESC";
+
+                    var cmd = new MySqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@keyword", $"%{keyword}%");
+
+                    var adapter = new MySqlDataAdapter(cmd);
+                    var dt = new DataTable();
+                    adapter.Fill(dt);
+
+                    dgvQLLichHen.DataSource = dt;
+
+                    // Đặt đúng tên cột như trong form của bạn
+                    if (dgvQLLichHen.Columns.Count >= 7)
+                    {
+                        dgvQLLichHen.Columns["MaLichHen"].HeaderText = "Mã lịch hẹn";
+                        dgvQLLichHen.Columns["ThoiGian"].HeaderText = "Thời gian";
+                        dgvQLLichHen.Columns["KhungGio"].HeaderText = "Khung giờ";
+                        dgvQLLichHen.Columns["status"].HeaderText = "Trạng thái";
+                        dgvQLLichHen.Columns["MaDichVu"].HeaderText = "Mã dịch vụ";
+                        dgvQLLichHen.Columns["MaKhachHang"].HeaderText = "Mã khách hàng";
+                        dgvQLLichHen.Columns["ThongTinThuCung"].HeaderText = "Thông tin thú cưng";
+
+                        // Ẩn cột status thô, thay bằng hiển thị tiếng Việt
+                        dgvQLLichHen.Columns["status"].Visible = false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi tải lịch hẹn: " + ex.Message);
+            }
+        }
+        private void LoadKhungGio()
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    var cmd = new MySqlCommand("SELECT time_slot FROM time_slot_config WHERE is_active = 1 ORDER BY time_slot", conn);
+                    var reader = cmd.ExecuteReader();
+                    cmbKhungGio.Items.Clear();
+                    while (reader.Read())
+                        cmbKhungGio.Items.Add(reader["time_slot"].ToString());
+
+                    if (cmbKhungGio.Items.Count > 0) cmbKhungGio.SelectedIndex = 0;
+                }
+            }
+            catch (Exception ex) { MessageBox.Show("Lỗi tải khung giờ: " + ex.Message); }
+        }
+
+        // Gọi lại khi cần làm mới (ví dụ sau khi thêm/sửa/xóa)
+        public void RefreshLichHen()
+        {
+            LoadLichHen();
+        }
+
+        private void dgvQLLichHen_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+
+            var row = dgvQLLichHen.Rows[e.RowIndex];
+
+            txtMaLichHen.Text = row.Cells["MaLichHen"].Value?.ToString() ?? "";
+            txtMaDV.Text = row.Cells["MaDichVu"].Value?.ToString() ?? "";
+            txtMaKH.Text = row.Cells["MaKhachHang"].Value?.ToString() ?? "";
+            txtPetinfo.Text = row.Cells["ThongTinThuCung"].Value?.ToString() ?? "";
+            cmbKhungGio.Text = row.Cells["KhungGio"].Value?.ToString() ?? "";
+
+            // Đặt trạng thái tiếng Việt
+            string status = row.Cells["status"].Value?.ToString();
+            cbTrangThai.Text = status switch
+            {
+                "pending" => "Chờ xác nhận",
+                "confirmed" => "Đã xác nhận",
+                "completed" => "Hoàn thành",
+                "cancelled" => "Đã hủy",
+                _ => "Chờ xác nhận"
+            };
+
+            // Đặt thời gian
+            if (DateTime.TryParseExact(row.Cells["ThoiGian"].Value?.ToString(), "dd/MM/yyyy HH:mm", null, System.Globalization.DateTimeStyles.None, out DateTime dt))
+            {
+                dtpThoiGian.Value = dt;
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = @"
+                        INSERT INTO LichHen (MaLich, NgayGio, TrangThai, MaKH, MaThuCung, MaDV, MaNV)
+                        VALUES (@MaLich, @NgayGio, @TrangThai, @MaKH, @MaThuCung, @MaDV, @MaNV);";
+
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MaLich", txtMaLichHen.Text);
+                    cmd.Parameters.AddWithValue("@NgayGio", dtpThoiGian.Value);
+                    cmd.Parameters.AddWithValue("@TrangThai", cbTrangThai.Text);
+                    cmd.Parameters.AddWithValue("@MaKH", txtMaKH.Text);
+                    cmd.Parameters.AddWithValue("@MaThuCung", txtKhungGio.Text);
+                    cmd.Parameters.AddWithValue("@MaDV", txtMaDV.Text);
+                    cmd.Parameters.AddWithValue("@MaNV", txtPetinfo.Text);
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Thêm lịch hẹn thành công!");
+                    LoadLichHen();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi thêm: " + ex.Message);
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtMaLichHen.Text))
+            {
+                MessageBox.Show("Vui lòng chọn mã lịch hẹn để xóa!");
+                return;
+            }
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "DELETE FROM LichHen WHERE MaLich = @MaLich";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MaLich", txtMaLichHen.Text);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Xóa lịch hẹn thành công!");
+                    LoadLichHen();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi xóa: " + ex.Message);
+            }
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            string maLich = txtTimKiem.Text.Trim();
+
+            if (string.IsNullOrEmpty(maLich))
+            {
+                // Nếu để trống, load toàn bộ dữ liệu
+                LoadLichHen();
+                return;
+            }
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = @"
+                SELECT 
+                    MaLich,
+                    NgayGio,
+                    TrangThai,
+                    MaKH,
+                    MaThuCung,
+                    MaDV,
+                    MaNV
+                FROM LichHen
+                WHERE MaLich LIKE @MaLich
+                ORDER BY NgayGio DESC;";
+
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MaLich", "%" + maLich + "%");
+
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+
+                    dgvQLLichHen.DataSource = dt;
+                    dgvQLLichHen.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                    // Nếu không có dữ liệu
+                    if (dt.Rows.Count == 0)
+                    {
+                        MessageBox.Show("Không tìm thấy lịch hẹn có mã: " + maLich,
+                            "Kết quả tìm kiếm", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tìm kiếm: " + ex.Message, "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            // Kiểm tra mã lịch hẹn có rỗng không
+            if (string.IsNullOrWhiteSpace(txtMaLichHen.Text))
+            {
+                MessageBox.Show("Vui lòng chọn lịch hẹn để sửa!");
+                return;
+            }
+
+            try
+            {
+                using (var conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    // Tạo ngày giờ đầy đủ từ dtp + khung giờ
+                    string time = cmbKhungGio.Text.Trim();
+                    DateTime fullDateTime = dtpThoiGian.Value.Date;
+                    if (TimeSpan.TryParse(time, out TimeSpan ts))
+                        fullDateTime = fullDateTime.Add(ts);
+
+                    string statusDb = cbTrangThai.Text switch
+                    {
+                        "Chờ xác nhận" => "pending",
+                        "Đã xác nhận" => "confirmed",
+                        "Hoàn thành" => "completed",
+                        "Đã hủy" => "cancelled",
+                        _ => "pending"
+                    };
+
+                    string sql = @"
+                        UPDATE appointments 
+                        SET appointment_date = @dateTime,
+                            time_slot = @timeSlot,
+                            status = @status
+                        WHERE appointment_id = @id";
+
+                    var cmd = new MySqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@id", txtMaLichHen.Text);
+                    cmd.Parameters.AddWithValue("@dateTime", fullDateTime);
+                    cmd.Parameters.AddWithValue("@timeSlot", cmbKhungGio.Text);
+                    cmd.Parameters.AddWithValue("@status", statusDb);
+
+                    int rows = cmd.ExecuteNonQuery();
+                    if (rows > 0)
+                    {
+                        MessageBox.Show("Cập nhật thành công!");
+                        LoadLichHen(txtTimKiem.Text.Trim());
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không tìm thấy lịch hẹn!");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+        }
+    }
+}
+
+

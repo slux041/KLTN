@@ -1,0 +1,116 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+namespace GD
+{
+    public partial class QLDV : Form
+    {
+        private readonly string connectionString = "Server=127.0.0.1;Database=spathucung;User=root;Password=;";
+
+        public QLDV()
+        {
+            InitializeComponent();
+            LoadComboBoxData();
+            LoadServices();
+            LoadCategories();
+        }
+        private void LoadComboBoxData()
+        {
+            // Trạng thái
+            cmbTrangThai.Items.Clear();
+            cmbTrangThai.Items.Add("1");  // Active
+            cmbTrangThai.Items.Add("0");  // Inactive
+            cmbTrangThai.SelectedIndex = 0;
+
+            // Thời gian làm
+            cmbThoiGian.Items.Clear();
+            cmbThoiGian.Items.Add("15");
+            cmbThoiGian.Items.Add("30");
+            cmbThoiGian.Items.Add("45");
+            cmbThoiGian.Items.Add("60");
+            cmbThoiGian.Items.Add("90");
+            cmbThoiGian.SelectedIndex = 0;
+        }
+        private void LoadServices()
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = @"SELECT 
+                            service_id,
+                            name,
+                            description,
+                            price,
+                            duration_minutes,
+                            category_id,
+                            is_active
+                         FROM services";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                // Đổi tên cột sang tiếng Việt để hiển thị và truy cập bằng tên tiếng Việt
+                if (dt.Columns.Contains("service_id")) dt.Columns["service_id"].ColumnName = "Mã dịch vụ";
+                if (dt.Columns.Contains("name")) dt.Columns["name"].ColumnName = "Tên dịch vụ";
+                if (dt.Columns.Contains("description")) dt.Columns["description"].ColumnName = "Mô tả";
+                if (dt.Columns.Contains("price")) dt.Columns["price"].ColumnName = "Giá";
+                if (dt.Columns.Contains("duration_minutes")) dt.Columns["duration_minutes"].ColumnName = "Thời gian";
+                if (dt.Columns.Contains("category_id")) dt.Columns["category_id"].ColumnName = "Danh mục";
+                if (dt.Columns.Contains("is_active")) dt.Columns["is_active"].ColumnName = "Trạng thái";
+
+                dgvdichvu.AutoGenerateColumns = true;
+                dgvdichvu.DataSource = dt;
+
+                // Định dạng cột Giá nếu có
+                if (dgvdichvu.Columns["Giá"] != null)
+                {
+                    dgvdichvu.Columns["Giá"].DefaultCellStyle.Format = "N0";
+                    dgvdichvu.Columns["Giá"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                }
+            }
+        }
+        private void LoadCategories()
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT category_id, name FROM categories WHERE type = 'service'";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                cmbDanhMuc.DataSource = dt;
+                cmbDanhMuc.DisplayMember = "name";
+                cmbDanhMuc.ValueMember = "category_id";
+                cmbDanhMuc.SelectedIndex = -1;
+            }
+        }
+
+
+        private void dgvDichvu_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvdichvu.Rows[e.RowIndex];
+
+                txtMaDV.Text = row.Cells["Mã dịch vụ"].Value.ToString();
+                txtTenDV.Text = row.Cells["Tên dịch vụ"].Value.ToString();
+                txtMoTa.Text = row.Cells["Mô tả"].Value.ToString();
+                txtGia.Text = row.Cells["Giá"].Value.ToString();
+
+                cmbThoiGian.Text = row.Cells["Thời gian"].Value.ToString();
+                cmbTrangThai.Text = row.Cells["Trạng thái"].Value.ToString();
+                cmbDanhMuc.SelectedValue = row.Cells["Danh mục"].Value;
+            }
+        }
+    }
+}

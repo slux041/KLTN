@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>D:\PetSpaWinform\GD\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmChiTietDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QLDH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QLDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QLGiaoDich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QLLoaiSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QLNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QLKM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QLLichHen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QLSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

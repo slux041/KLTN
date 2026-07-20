@@ -1,0 +1,408 @@
+﻿using System;
+using System.Data;
+using System.Drawing;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace GD
+{
+    public partial class QLDH : Form
+    {
+        private readonly string connectionString = "Server=127.0.0.1;Database=spathucung;user=root;password=;";
+
+        public QLDH()
+        {
+            InitializeComponent();
+            InitializeTrangThai();
+            InitializeComboBox();
+            LoadDonHang();
+        }
+        private void InitializeTrangThai()
+        {
+            cmbTrangThai.Items.Clear();
+            cmbTrangThai.Items.Add("Chờ xác nhận");    // pending
+            cmbTrangThai.Items.Add("Đang xử lý");      // processing
+            cmbTrangThai.Items.Add("Hoàn thành");      // completed
+            cmbTrangThai.Items.Add("Đã hủy");         // cancelled
+            cmbTrangThai.SelectedIndex = -1;
+            cmbTrangThai.Text = "";
+        }
+        private void LoadDonHang()
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    string query = @"
+                        SELECT
+                            o.order_id AS `Mã đơn hàng`,
+                            o.created_at AS `Ngày đặt`,
+                            o.order_status AS `Trạng thái`,
+                            IFNULL(o.total_amount,0) AS `Tổng tiền`,
+                            o.payment_method AS `Hình thức thanh toán`,
+                            o.user_id AS `Mã người dùng`,
+                            c.customer_id AS `Mã khách hàng`,
+                            u.full_name AS `Khách hàng`
+                        FROM orders o
+                        LEFT JOIN users u ON o.user_id = u.user_id
+                        LEFT JOIN customers c ON o.user_id = c.user_id
+                        WHERE 1=1";
+
+                    MySqlCommand cmd = new MySqlCommand();
+                    cmd.Connection = conn;
+
+                    // Lọc theo thời gian
+                    string selected = cmbTimKiemTG.SelectedItem?.ToString();
+
+                    if (!string.IsNullOrEmpty(selected) && selected != "Tất cả")
+                    {
+                        DateTime fromDate = DateTime.Today;
+                        DateTime toDate = DateTime.Today.AddDays(1);
+
+                        switch (selected)
+                        {
+                            case "Hôm nay": fromDate = DateTime.Today; break;
+                            case "7 ngày trước": fromDate = DateTime.Today.AddDays(-6); break;
+                            case "1 tháng trước": fromDate = DateTime.Today.AddMonths(-1); break;
+                            case "3 tháng trước": fromDate = DateTime.Today.AddMonths(-3); break;
+                        }
+
+                        query += " AND o.created_at >= @FromDate AND o.created_at < @ToDate";
+                        cmd.Parameters.AddWithValue("@FromDate", fromDate);
+                        cmd.Parameters.AddWithValue("@ToDate", toDate);
+                    }
+
+                    // Lọc theo mã đơn (hỗ trợ tìm theo chuỗi)
+                    if (!string.IsNullOrEmpty(txtTimKiemMa.Text.Trim()))
+                    {
+                        query += " AND CAST(o.order_id AS CHAR) LIKE @OrderId";
+                        cmd.Parameters.AddWithValue("@OrderId", "%" + txtTimKiemMa.Text.Trim() + "%");
+                    }
+
+                    cmd.CommandText = query;
+
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+
+                    dgvDonHang.DataSource = dt;
+
+                    // format total column if exists
+                    if (dgvDonHang.Columns.Contains("Tổng tiền"))
+                    {
+                        // orders.total_amount is DECIMAL(18,2) in DB
+                        dgvDonHang.Columns["Tổng tiền"].DefaultCellStyle.Format = "N2";
+                        dgvDonHang.Columns["Tổng tiền"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                    }
+
+                    SetupDataGridView();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi lọc đơn hàng: " + ex.Message);
+            }
+        }
+
+        private void dgvDonHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                txtMaDH.Text = dgvDonHang.Rows[e.RowIndex].Cells["Mã đơn hàng"].Value.ToString();
+                string statusDb = dgvDonHang.Rows[e.RowIndex].Cells["Trạng thái"].Value.ToString();
+
+                // map DB status to UI Vietnamese text
+                cmbTrangThai.Text = statusDb switch
+                {
+                    "pending" => "Chờ xác nhận",
+                    "processing" => "Đang xử lý",
+                    "completed" => "Hoàn thành",
+                    "cancelled" => "Đã hủy",
+                    _ => statusDb
+                };
+
+                txtTongTien.Text = dgvDonHang.Rows[e.RowIndex].Cells["Tổng tiền"].Value.ToString();
+                txtHinhThuc.Text = dgvDonHang.Rows[e.RowIndex].Cells["Hình thức thanh toán"].Value?.ToString() ?? "";
+
+                // Prefer displaying customer_id (customers.customer_id) when available,
+                // otherwise show the raw user_id stored on orders.user_id
+                if (dgvDonHang.Columns.Contains("Mã khách hàng") &&
+                    dgvDonHang.Rows[e.RowIndex].Cells["Mã khách hàng"].Value != DBNull.Value &&
+                    !string.IsNullOrEmpty(dgvDonHang.Rows[e.RowIndex].Cells["Mã khách hàng"].Value?.ToString()))
+                {
+                    txtmaKH.Text = dgvDonHang.Rows[e.RowIndex].Cells["Mã khách hàng"].Value.ToString();
+                }
+                else if (dgvDonHang.Columns.Contains("Mã người dùng"))
+                {
+                    txtmaKH.Text = dgvDonHang.Rows[e.RowIndex].Cells["Mã người dùng"].Value?.ToString() ?? "";
+                }
+
+                dtpNgayDat.Value = Convert.ToDateTime(dgvDonHang.Rows[e.RowIndex].Cells["Ngày đặt"].Value);
+            }
+        }
+
+        private void InitializeComboBox()
+        {
+            cmbTimKiemTG.Items.Clear();
+            cmbTimKiemTG.Items.Add("Hôm nay");
+            cmbTimKiemTG.Items.Add("7 ngày trước");
+            cmbTimKiemTG.Items.Add("1 tháng trước");
+            cmbTimKiemTG.Items.Add("3 tháng trước");
+            cmbTimKiemTG.SelectedIndex = -1;
+            cmbTimKiemTG.Text = "";
+        }
+
+        private void cmbTimKiemTG_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadDonHang();
+        }
+
+        private void txtTimKiemMa_TextChanged(object sender, EventArgs e)
+        {
+            LoadDonHang();
+        }
+
+        // Helper: resolve a user_id from an input which could be either a users.user_id or customers.customer_id
+        private int ResolveUserId(string input, MySqlConnection conn)
+        {
+            if (string.IsNullOrWhiteSpace(input))
+                return -1;
+
+            if (!int.TryParse(input.Trim(), out int id))
+                return -1;
+
+            // check if this id exists as a user_id in users
+            string qUser = "SELECT COUNT(*) FROM users WHERE user_id = @Id";
+            using (var cmd = new MySqlCommand(qUser, conn))
+            {
+                cmd.Parameters.AddWithValue("@Id", id);
+                var cnt = Convert.ToInt64(cmd.ExecuteScalar());
+                if (cnt > 0)
+                    return id; // it's a user_id
+            }
+
+            // otherwise check if it's a customer_id and map to user_id
+            string qCust = "SELECT user_id FROM customers WHERE customer_id = @Id";
+            using (var cmd2 = new MySqlCommand(qCust, conn))
+            {
+                cmd2.Parameters.AddWithValue("@Id", id);
+                var obj = cmd2.ExecuteScalar();
+                if (obj != null && obj != DBNull.Value)
+                    return Convert.ToInt32(obj);
+            }
+
+            return -1;
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            // Validate required numeric fields
+            if (string.IsNullOrWhiteSpace(txtmaKH.Text) || string.IsNullOrWhiteSpace(txtTongTien.Text) || cmbTrangThai.SelectedIndex == -1)
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin (Mã khách hàng, Tổng tiền, Trạng thái)!");
+                return;
+            }
+
+            if (!decimal.TryParse(txtTongTien.Text.Trim(), out decimal totalAmount))
+            {
+                MessageBox.Show("Tổng tiền không hợp lệ.");
+                return;
+            }
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    int resolvedUserId = ResolveUserId(txtmaKH.Text.Trim(), conn);
+                    if (resolvedUserId <= 0)
+                    {
+                        MessageBox.Show("Không tìm thấy user_id hoặc customer_id tương ứng.");
+                        return;
+                    }
+
+                    string statusDb = cmbTrangThai.Text switch
+                    {
+                        "Chờ xác nhận" => "pending",
+                        "Đang xử lý" => "processing",
+                        "Hoàn thành" => "completed",
+                        "Đã hủy" => "cancelled",
+                        _ => "pending"
+                    };
+
+                    string query = @"
+                        INSERT INTO orders (user_id, total_amount, payment_method, order_status, created_at)
+                        VALUES (@user_id, @total_amount, @payment_method, @order_status, @created_at);";
+
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@user_id", resolvedUserId);
+                    cmd.Parameters.AddWithValue("@total_amount", totalAmount);
+                    cmd.Parameters.AddWithValue("@payment_method", txtHinhThuc.Text.Trim());
+                    cmd.Parameters.AddWithValue("@order_status", statusDb);
+                    cmd.Parameters.AddWithValue("@created_at", dtpNgayDat.Value);
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Thêm đơn hàng thành công!");
+                    LoadDonHang();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi thêm: " + ex.Message);
+            }
+        }
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (txtMaDH.Text.Trim() == "")
+            {
+                MessageBox.Show("Chọn đơn hàng để sửa!");
+                return;
+            }
+
+            if (!int.TryParse(txtMaDH.Text.Trim(), out int orderId))
+            {
+                MessageBox.Show("Mã đơn hàng không hợp lệ.");
+                return;
+            }
+
+            if (!decimal.TryParse(txtTongTien.Text.Trim(), out decimal totalAmount))
+            {
+                MessageBox.Show("Tổng tiền không hợp lệ.");
+                return;
+            }
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    int resolvedUserId = ResolveUserId(txtmaKH.Text.Trim(), conn);
+                    if (resolvedUserId <= 0)
+                    {
+                        MessageBox.Show("Không tìm thấy user_id hoặc customer_id tương ứng.");
+                        return;
+                    }
+
+                    string statusDb = cmbTrangThai.Text switch
+                    {
+                        "Chờ xác nhận" => "pending",
+                        "Đang xử lý" => "processing",
+                        "Hoàn thành" => "completed",
+                        "Đã hủy" => "cancelled",
+                        _ => "pending"
+                    };
+
+                    string query = @"
+                        UPDATE orders
+                        SET 
+                            created_at = @CreatedAt,
+                            order_status = @OrderStatus,
+                            total_amount = @TotalAmount,
+                            payment_method = @PaymentMethod,
+                            user_id = @UserId
+                        WHERE order_id = @OrderId";
+
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@OrderId", orderId);
+                    cmd.Parameters.AddWithValue("@CreatedAt", dtpNgayDat.Value);
+                    cmd.Parameters.AddWithValue("@OrderStatus", statusDb);
+                    cmd.Parameters.AddWithValue("@TotalAmount", totalAmount);
+                    cmd.Parameters.AddWithValue("@PaymentMethod", txtHinhThuc.Text.Trim());
+                    cmd.Parameters.AddWithValue("@UserId", resolvedUserId);
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Sửa đơn hàng thành công!");
+                    LoadDonHang();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi sửa: " + ex.Message);
+            }
+        }
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (txtMaDH.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng chọn đơn hàng để xóa!");
+                return;
+            }
+
+            if (!int.TryParse(txtMaDH.Text.Trim(), out int orderId))
+            {
+                MessageBox.Show("Mã đơn hàng không hợp lệ.");
+                return;
+            }
+
+            if (MessageBox.Show("Bạn có chắc muốn xóa đơn hàng này?",
+                                "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    // Xóa chi tiết trước
+                    string delCT = "DELETE FROM order_items WHERE order_id = @OrderId";
+                    MySqlCommand cmdCT = new MySqlCommand(delCT, conn);
+                    cmdCT.Parameters.AddWithValue("@OrderId", orderId);
+                    cmdCT.ExecuteNonQuery();
+
+                    // Xóa đơn hàng
+                    string delDH = "DELETE FROM orders WHERE order_id = @OrderId";
+                    MySqlCommand cmd = new MySqlCommand(delDH, conn);
+                    cmd.Parameters.AddWithValue("@OrderId", orderId);
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Xóa đơn hàng thành công!");
+                    LoadDonHang();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi xóa: " + ex.Message);
+            }
+        }
+
+        // Configure DataGridView appearance and behavior
+        private void SetupDataGridView()
+        {
+            try
+            {
+                dgvDonHang.AllowUserToAddRows = false;
+                dgvDonHang.AllowUserToDeleteRows = false;
+                dgvDonHang.ReadOnly = true;
+                dgvDonHang.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                dgvDonHang.MultiSelect = false;
+                dgvDonHang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dgvDonHang.RowTemplate.Height = 26;
+
+                // set column headers alignment
+                foreach (DataGridViewColumn col in dgvDonHang.Columns)
+                {
+                    col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                // If "Ngày đặt" column exists, format it
+                if (dgvDonHang.Columns.Contains("Ngày đặt"))
+                {
+                    dgvDonHang.Columns["Ngày đặt"].DefaultCellStyle.Format = "g"; // general date/time
+                    dgvDonHang.Columns["Ngày đặt"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+            }
+            catch
+            {
+                // ignore UI setup errors
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace GD
+{
+    public partial class DangKi : Form
+    {
+        private readonly string connectionString = "Server=127.0.0.1;Database=spathucung;user=root;password=;";
+        public DangKi()
+        {
+            InitializeComponent();
+            // Ẩn ký tự mật khẩu
+            txtMatKhau.UseSystemPasswordChar = true;
+            txtNhapLaiMatKhau.UseSystemPasswordChar = true;
+
+            // Thêm chức vụ vào combobox
+            cbChucVu.Items.AddRange(new string[] { "Nhân viên", "Quản lý" });
+            cbChucVu.SelectedIndex = 0; // Mặc định là Nhân viên
+
+            // Make the eye icons clickable
+            pictureBox3.Cursor = Cursors.Hand;
+            pictureBox4.Cursor = Cursors.Hand;
+
+            // Ensure emoji labels are on top
+            lblEye1.BringToFront();
+            lblEye2.BringToFront();
+        }
+        private void btnDangKy_Click(object sender, EventArgs e)
+        {
+
+            string tenTK = txtDangNhap.Text.Trim();
+            string maNV = txtMaNV.Text.Trim();
+            string matKhau = txtMatKhau.Text.Trim();
+            string nhapLai = txtNhapLaiMatKhau.Text.Trim();
+            string chucVu = cbChucVu.SelectedItem?.ToString();
+
+            // Kiểm tra dữ liệu
+            if (string.IsNullOrEmpty(tenTK) || string.IsNullOrEmpty(maNV) ||
+                string.IsNullOrEmpty(matKhau) || string.IsNullOrEmpty(nhapLai))
+            {
+                MessageBox.Show(" Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (matKhau != nhapLai)
+            {
+                MessageBox.Show("❌ Mật khẩu và xác nhận mật khẩu không khớp!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Đăng ký tài khoản
+            DangKyTaiKhoan(tenTK, maNV, matKhau, chucVu);
+
+        }
+        private void DangKyTaiKhoan(string tenTK, string maNV, string matKhau, string chucVu)
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string sql = "INSERT INTO TaiKhoan (TenTK, MatKhau, MaNV, Quyen) VALUES (@tk, @mk, @manv, @q)";
+                    using (var cmd = new MySqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@tk", tenTK);
+                        cmd.Parameters.AddWithValue("@mk", matKhau);
+                        cmd.Parameters.AddWithValue("@manv", maNV);
+                        cmd.Parameters.AddWithValue("@q", chucVu.ToLower() == "quản lý" ? "admin" : "nhanvien");
+
+                        int rows = cmd.ExecuteNonQuery();
+
+                        if (rows > 0)
+                        {
+                            MessageBox.Show(" Đăng ký thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide(); // Ẩn form đăng ký
+                            DangNhap dangNhapForm = new DangNhap();
+                            dangNhapForm.ShowDialog(); // Mở form đăng nhập
+                            this.Close(); // Đóng form đăng ký
+                        }
+                        else
+                        {
+                            MessageBox.Show("❌ Đăng ký thất bại. Vui lòng thử lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.Contains("Duplicate entry"))
+                {
+                    MessageBox.Show(" Tên tài khoản đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (ex.Message.Contains("foreign key constraint fails"))
+                {
+                    MessageBox.Show(" Mã nhân viên không tồn tại trong hệ thống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi kết nối database:\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            // Toggle password visibility for the main password field
+            try
+            {
+                txtMatKhau.UseSystemPasswordChar = !txtMatKhau.UseSystemPasswordChar;
+                // Swap eye image if available
+                try { pictureBox3.Image = txtMatKhau.UseSystemPasswordChar ? Properties.Resources.close : Properties.Resources.show; } catch { }
+                lblEye1.Text = txtMatKhau.UseSystemPasswordChar ? "👁" : "👁️";
+            }
+            catch
+            {
+                // ignore resource errors
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            // Toggle password visibility for the confirm password field
+            try
+            {
+                txtNhapLaiMatKhau.UseSystemPasswordChar = !txtNhapLaiMatKhau.UseSystemPasswordChar;
+                // Swap eye image if available
+                try { pictureBox4.Image = txtNhapLaiMatKhau.UseSystemPasswordChar ? Properties.Resources.close : Properties.Resources.show; } catch { }
+                lblEye2.Text = txtNhapLaiMatKhau.UseSystemPasswordChar ? "👁" : "👁️";
+            }
+            catch
+            {
+                // ignore resource errors
+            }
+        }
+
+        private void lblEye1_Click(object sender, EventArgs e)
+        {
+            pictureBox3_Click(sender, e);
+        }
+
+        private void lblEye2_Click(object sender, EventArgs e)
+        {
+            pictureBox4_Click(sender, e);
+        }
+    }
+}
+

@@ -1,0 +1,98 @@
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using MySql.Data.MySqlClient;
+using System;
+using System.Windows.Forms;
+
+namespace GD
+{
+    public partial class DangNhap : Form
+    {
+        private readonly string connectionString = "Server=127.0.0.1;Database=spathucung;user=root;password=;";
+
+        public DangNhap()
+        {
+            InitializeComponent();
+        }
+
+        private MySqlConnection GetConnection()
+        {
+            return new MySqlConnection(connectionString);
+        }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            // Kiểm tra xem các điều khiển có tồn tại không
+            if (txtTenDN == null || txtMatKhau == null)
+            {
+                MessageBox.Show("Lỗi: Một hoặc nhiều thành phần giao diện không được tìm thấy!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string user = txtTenDN.Text.Trim();
+            string pass = txtMatKhau.Text.Trim();
+
+            if (string.IsNullOrEmpty(user) || string.IsNullOrEmpty(pass))
+            {
+                MessageBox.Show("Vui lòng nhập tài khoản và mật khẩu.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                using (var conn = GetConnection())
+                {
+                    conn.Open();
+                    string query = "SELECT COUNT(*) FROM TaiKhoan WHERE TenTK = @u AND MatKhau = @p"; // Chuẩn hóa tên cột
+                    using (var cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@u", user);
+                        cmd.Parameters.AddWithValue("@p", pass); // Nên mã hóa mật khẩu
+
+                        // Kiểm tra giá trị trả về từ ExecuteScalar
+                        object result = cmd.ExecuteScalar();
+                        int count = 0;
+                        if (result != null && result != DBNull.Value)
+                        {
+                            count = Convert.ToInt32(result);
+                        }
+
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Bạn đã đăng nhập thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide();
+                            // Ví dụ: new FormMain().Show(); // Chuyển đến form chính
+                        }
+                        else
+                        {
+                            MessageBox.Show("Tài khoản hoặc mật khẩu không đúng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi kết nối đến database:\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private bool isPasswordVisible = false;
+        private void pictureBoxEye_Click(object sender, EventArgs e)
+        {
+            if (isPasswordVisible)
+            {
+                // Ẩn mật khẩu
+                txtMatKhau.UseSystemPasswordChar = true;
+                pictureBoxEye.Image = Properties.Resources.show; // icon con mắt đóng
+                isPasswordVisible = false;
+            }
+            else
+            {
+                // Hiện mật khẩu
+                txtMatKhau.UseSystemPasswordChar = false;
+                pictureBoxEye.Image = Properties.Resources.close; // icon con mắt mở
+                isPasswordVisible = true;
+            }
+        }
+
+      
+    }
+}

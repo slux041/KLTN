@@ -1,0 +1,400 @@
+﻿namespace GD
+{
+    partial class QLDV
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            label1 = new Label();
+            groupBox3 = new GroupBox();
+            cmbDanhMuc = new ComboBox();
+            label9 = new Label();
+            cmbThoiGian = new ComboBox();
+            label8 = new Label();
+            cmbTrangThai = new ComboBox();
+            label7 = new Label();
+            txtGia = new TextBox();
+            label6 = new Label();
+            txtMoTa = new TextBox();
+            label5 = new Label();
+            txtTenDV = new TextBox();
+            label4 = new Label();
+            txtMaDV = new TextBox();
+            label3 = new Label();
+            label2 = new Label();
+            dgvdichvu = new DataGridView();
+            groupBox4 = new GroupBox();
+            txtTimKiem = new TextBox();
+            btnTim = new Button();
+            groupBox5 = new GroupBox();
+            label10 = new Label();
+            btnSua = new Button();
+            btnXoa = new Button();
+            btnThem = new Button();
+            groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvdichvu).BeginInit();
+            groupBox4.SuspendLayout();
+            groupBox5.SuspendLayout();
+            SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            groupBox1.Location = new Point(0, 0);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(208, 1033);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            groupBox2.BackColor = SystemColors.Info;
+            groupBox2.Controls.Add(label1);
+            groupBox2.Location = new Point(214, 0);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(1710, 84);
+            groupBox2.TabIndex = 1;
+            groupBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(570, 23);
+            label1.Name = "label1";
+            label1.Size = new Size(207, 31);
+            label1.TabIndex = 0;
+            label1.Text = "QUẢN LÍ DỊCH VỤ";
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(cmbDanhMuc);
+            groupBox3.Controls.Add(label9);
+            groupBox3.Controls.Add(cmbThoiGian);
+            groupBox3.Controls.Add(label8);
+            groupBox3.Controls.Add(cmbTrangThai);
+            groupBox3.Controls.Add(label7);
+            groupBox3.Controls.Add(txtGia);
+            groupBox3.Controls.Add(label6);
+            groupBox3.Controls.Add(txtMoTa);
+            groupBox3.Controls.Add(label5);
+            groupBox3.Controls.Add(txtTenDV);
+            groupBox3.Controls.Add(label4);
+            groupBox3.Controls.Add(txtMaDV);
+            groupBox3.Controls.Add(label3);
+            groupBox3.Controls.Add(label2);
+            groupBox3.Location = new Point(214, 90);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(1710, 311);
+            groupBox3.TabIndex = 2;
+            groupBox3.TabStop = false;
+            // 
+            // cmbDanhMuc
+            // 
+            cmbDanhMuc.FormattingEnabled = true;
+            cmbDanhMuc.Location = new Point(272, 264);
+            cmbDanhMuc.Name = "cmbDanhMuc";
+            cmbDanhMuc.Size = new Size(243, 28);
+            cmbDanhMuc.TabIndex = 14;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.Location = new Point(115, 264);
+            label9.Name = "label9";
+            label9.Size = new Size(139, 23);
+            label9.TabIndex = 13;
+            label9.Text = "Thuộc danh mục";
+            // 
+            // cmbThoiGian
+            // 
+            cmbThoiGian.FormattingEnabled = true;
+            cmbThoiGian.Location = new Point(1156, 193);
+            cmbThoiGian.Name = "cmbThoiGian";
+            cmbThoiGian.Size = new Size(243, 28);
+            cmbThoiGian.TabIndex = 12;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.Location = new Point(996, 198);
+            label8.Name = "label8";
+            label8.Size = new Size(114, 23);
+            label8.TabIndex = 11;
+            label8.Text = "Thời gian làm";
+            // 
+            // cmbTrangThai
+            // 
+            cmbTrangThai.FormattingEnabled = true;
+            cmbTrangThai.Location = new Point(1156, 120);
+            cmbTrangThai.Name = "cmbTrangThai";
+            cmbTrangThai.Size = new Size(243, 28);
+            cmbTrangThai.TabIndex = 10;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(996, 125);
+            label7.Name = "label7";
+            label7.Size = new Size(87, 23);
+            label7.TabIndex = 9;
+            label7.Text = "Trạng thái";
+            // 
+            // txtGia
+            // 
+            txtGia.Location = new Point(1156, 52);
+            txtGia.Name = "txtGia";
+            txtGia.Size = new Size(243, 27);
+            txtGia.TabIndex = 8;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(996, 56);
+            label6.Name = "label6";
+            label6.Size = new Size(35, 23);
+            label6.TabIndex = 7;
+            label6.Text = "Giá";
+            // 
+            // txtMoTa
+            // 
+            txtMoTa.Location = new Point(272, 194);
+            txtMoTa.Name = "txtMoTa";
+            txtMoTa.Size = new Size(243, 27);
+            txtMoTa.TabIndex = 6;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(115, 198);
+            label5.Name = "label5";
+            label5.Size = new Size(55, 23);
+            label5.TabIndex = 5;
+            label5.Text = "Mô tả";
+            // 
+            // txtTenDV
+            // 
+            txtTenDV.Location = new Point(272, 121);
+            txtTenDV.Name = "txtTenDV";
+            txtTenDV.Size = new Size(243, 27);
+            txtTenDV.TabIndex = 4;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(115, 125);
+            label4.Name = "label4";
+            label4.Size = new Size(96, 23);
+            label4.TabIndex = 3;
+            label4.Text = "Tên dịch vụ";
+            // 
+            // txtMaDV
+            // 
+            txtMaDV.Location = new Point(272, 56);
+            txtMaDV.Name = "txtMaDV";
+            txtMaDV.Size = new Size(243, 27);
+            txtMaDV.TabIndex = 2;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(115, 56);
+            label3.Name = "label3";
+            label3.Size = new Size(94, 23);
+            label3.TabIndex = 1;
+            label3.Text = "Mã dịch vụ";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(0, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(179, 28);
+            label2.TabIndex = 0;
+            label2.Text = "Thông tin dịch vụ";
+            // 
+            // dgvdichvu
+            // 
+            dgvdichvu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvdichvu.Location = new Point(214, 407);
+            dgvdichvu.Name = "dgvdichvu";
+            dgvdichvu.RowHeadersWidth = 51;
+            dgvdichvu.Size = new Size(1710, 428);
+            dgvdichvu.TabIndex = 3;
+            dgvdichvu.CellClick += dgvDichvu_CellClick;
+            // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(txtTimKiem);
+            groupBox4.Controls.Add(btnTim);
+            groupBox4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox4.Location = new Point(329, 892);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(458, 90);
+            groupBox4.TabIndex = 4;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Tìm kiếm";
+            // 
+            // txtTimKiem
+            // 
+            txtTimKiem.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTimKiem.Location = new Point(129, 33);
+            txtTimKiem.Name = "txtTimKiem";
+            txtTimKiem.Size = new Size(247, 30);
+            txtTimKiem.TabIndex = 0;
+            txtTimKiem.TextChanged += txtTimKiem_TextChanged;
+            // 
+            // btnTim
+            // 
+            btnTim.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnTim.Location = new Point(22, 32);
+            btnTim.Name = "btnTim";
+            btnTim.Size = new Size(85, 33);
+            btnTim.TabIndex = 1;
+            btnTim.Text = "Tìm";
+            btnTim.UseVisualStyleBackColor = true;
+            btnTim.Click += btnTim_Click;
+            // 
+            // groupBox5
+            // 
+            groupBox5.Controls.Add(label10);
+            groupBox5.Controls.Add(btnSua);
+            groupBox5.Controls.Add(btnXoa);
+            groupBox5.Controls.Add(btnThem);
+            groupBox5.Location = new Point(1030, 892);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new Size(769, 90);
+            groupBox5.TabIndex = 15;
+            groupBox5.TabStop = false;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.Location = new Point(0, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(88, 28);
+            label10.TabIndex = 3;
+            label10.Text = "Công cụ";
+            // 
+            // btnSua
+            // 
+            btnSua.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSua.Location = new Point(606, 32);
+            btnSua.Name = "btnSua";
+            btnSua.Size = new Size(91, 38);
+            btnSua.TabIndex = 2;
+            btnSua.Text = "Sửa";
+            btnSua.UseVisualStyleBackColor = true;
+            // 
+            // btnXoa
+            // 
+            btnXoa.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnXoa.Location = new Point(342, 31);
+            btnXoa.Name = "btnXoa";
+            btnXoa.Size = new Size(98, 39);
+            btnXoa.TabIndex = 1;
+            btnXoa.Text = "Xóa";
+            btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnThem
+            // 
+            btnThem.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnThem.Location = new Point(123, 32);
+            btnThem.Name = "btnThem";
+            btnThem.Size = new Size(94, 38);
+            btnThem.TabIndex = 0;
+            btnThem.Text = "Thêm";
+            btnThem.UseVisualStyleBackColor = true;
+            // 
+            // QLDV
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1924, 1033);
+            Controls.Add(groupBox5);
+            Controls.Add(groupBox4);
+            Controls.Add(dgvdichvu);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Name = "QLDV";
+            Text = "QLDV";
+            WindowState = FormWindowState.Maximized;
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvdichvu).EndInit();
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
+            groupBox5.ResumeLayout(false);
+            groupBox5.PerformLayout();
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private Label label1;
+        private GroupBox groupBox3;
+        private Label label3;
+        private Label label2;
+        private Label label9;
+        private ComboBox cmbThoiGian;
+        private Label label8;
+        private ComboBox cmbTrangThai;
+        private Label label7;
+        private TextBox txtGia;
+        private Label label6;
+        private TextBox txtMoTa;
+        private Label label5;
+        private TextBox txtTenDV;
+        private Label label4;
+        private TextBox txtMaDV;
+        private DataGridView dgvdichvu;
+        private GroupBox groupBox4;
+        private TextBox txtTimKiem;
+        private Button btnTim;
+        private GroupBox groupBox5;
+        private Label label10;
+        private Button btnSua;
+        private Button btnXoa;
+        private Button btnThem;
+        private ComboBox cmbDanhMuc;
+    }
+}

@@ -1,0 +1,127 @@
+﻿using System;
+using System.Data;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace GD
+{
+    public partial class ThongKe : Form
+    {
+        private readonly string connectionString = "Server=127.0.0.1;Database=spathucung;user=root;password=;";
+
+        public ThongKe()
+        {
+            InitializeComponent();
+            this.Load += ThongKe_Load;  
+        }
+
+
+        private string GetQueryLichHen(string dk)
+        {
+            return $@"
+                SELECT 
+                    MaTT AS Ma,
+                    NgayTT AS ThoiGian,
+                    MaKH AS KhachHang,
+                    SoTien AS SoTien,
+                    MaNV AS NhanVien
+                FROM ThanhToanLichHen
+                {dk}
+            ";
+        }
+        private string GetQueryPOS(string dk)
+        {
+            return $@"
+                SELECT 
+                    HoaDon.MaHD AS Ma,
+                    HoaDon.NgayLap AS ThoiGian,
+                    HoaDon.MaKH AS KhachHang,
+                    SUM(ChiTietHoaDon.SoLuong * ChiTietHoaDon.DonGia) AS SoTien,
+                    HoaDon.MaNV AS NhanVien
+                FROM HoaDon
+                JOIN ChiTietHoaDon ON HoaDon.MaHD = ChiTietHoaDon.MaHD
+                {dk}
+                GROUP BY HoaDon.MaHD, HoaDon.NgayLap, HoaDon.MaKH, HoaDon.MaNV
+            ";
+        }
+
+        private void LoadDoanhThu(string cheDo)
+        {
+            string dk = "";
+
+            if (cheDo == "Hôm nay")
+                dk = "WHERE DATE(NgayLap) = CURDATE() OR DATE(NgayTT) = CURDATE()";
+
+            else if (cheDo == "7 ngày trước")
+                dk = "WHERE NgayLap >= CURDATE() - INTERVAL 7 DAY OR NgayTT >= CURDATE() - INTERVAL 7 DAY";
+
+            else if (cheDo == "1 tháng trước")
+                dk = "WHERE NgayLap >= CURDATE() - INTERVAL 30 DAY OR NgayTT >= CURDATE() - INTERVAL 30 DAY";
+
+            else
+                dk = "";
+
+            string query = $@"
+                SELECT * FROM (
+                    {GetQueryLichHen(dk)}
+                    UNION ALL
+                    {GetQueryPOS(dk)}
+                ) AS TongHop
+                ORDER BY ThoiGian DESC
+            ";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlDataAdapter da = new MySqlDataAdapter(query, conn))
+            {
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                dgvDoanhThu.DataSource = dt;
+
+                if (dt.Rows.Count == 0)
+                {
+                    lblNgay.Text = "Không có dữ liệu.";
+                    return;
+                }
+
+                // Đặt tên cột
+                dgvDoanhThu.Columns["Ma"].HeaderText = "Mã";
+                dgvDoanhThu.Columns["ThoiGian"].HeaderText = "Thời gian";
+                dgvDoanhThu.Columns["KhachHang"].HeaderText = "Khách hàng";
+                dgvDoanhThu.Columns["SoTien"].HeaderText = "Số tiền";
+                dgvDoanhThu.Columns["NhanVien"].HeaderText = "Nhân viên";
+
+                // Format tiền
+                dgvDoanhThu.Columns["SoTien"].DefaultCellStyle.Format = "#,### đ";
+                dgvDoanhThu.Columns["SoTien"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            }
+        }
+        private void ThongKe_Load(object sender, EventArgs e)
+        {
+            cmbDoanhThu.Items.Add("Hôm nay");
+            cmbDoanhThu.Items.Add("7 ngày trước");
+            cmbDoanhThu.Items.Add("1 tháng trước");
+            cmbDoanhThu.Items.Add("Tất cả");
+
+            cmbDoanhThu.SelectedIndex = 3;
+            cmbDoanhThu.SelectedIndex = -1;
+            cmbDoanhThu.Text = "";
+
+            LoadDoanhThu("Tất cả");
+        }
+
+        private void cmbDoanhThu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadDoanhThu(cmbDoanhThu.SelectedItem.ToString());
+        }
+
+        private void dgvDoanhThu_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                string tg = dgvDoanhThu.Rows[e.RowIndex].Cells["ThoiGian"].Value.ToString();
+                lblNgay.Text = "Thời gian: " + tg;
+            }
+        }
+    }
+}

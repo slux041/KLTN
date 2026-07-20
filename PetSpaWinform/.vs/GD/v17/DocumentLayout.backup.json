@@ -1,0 +1,1469 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qldh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qldh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qldh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qldh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qllichhen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qllichhen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qllichhen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qllichhen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qllichhen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qllichhen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\orderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\orderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\appointmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\appointmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlkh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlkh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qlsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\customerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\customerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\promotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\promotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlkm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlkm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qldv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qldv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qlkm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlkm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qlncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qlloaisp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlloaisp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qldv.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qldv.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qldv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qldv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlloaisp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlloaisp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlsp.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlsp.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\serviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\serviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\purchaseorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\purchaseorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\productdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\productdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\paginationdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\paginationdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\commondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\commondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\categorydtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\categorydtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\servicedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\servicedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\resource4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\resource4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\thongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\thongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlnv.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlnv.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlncc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlncc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlloaisp.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlloaisp.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlkm.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlkm.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlgiaodich.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlgiaodich.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlgiaodich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlgiaodich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qldh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qldh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\frmthanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmthanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmthanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmthanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmthanhtoan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmthanhtoan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmchitietdonhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmchitietdonhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmchitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmchitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmcheckin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmcheckin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmcheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmcheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\transactiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\transactiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\supplierdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\supplierdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\purchaseorderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\purchaseorderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\promotiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\promotiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\dashboarddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\dashboarddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qlnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\frmcheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmcheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\frmchitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmchitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\resources\\show.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\resources\\show.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\resources\\invisible.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\resources\\invisible.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\image\\close.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\image\\close.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\image\\show.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\image\\show.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qldv.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qldv.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlgiaodich.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlgiaodich.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qlgiaodich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlgiaodich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|c:\\users\\dell\\desktop\\kltn\\b09_sourcecode\\petspawinform\\gd\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 102,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "DangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DangNhap.cs",
+              "RelativeDocumentMoniker": "GD\\DangNhap.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DangNhap.cs",
+              "RelativeToolTip": "GD\\DangNhap.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAqwFcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T07:32:24.97Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QLDH.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDH.cs",
+              "RelativeDocumentMoniker": "GD\\QLDH.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDH.cs",
+              "RelativeToolTip": "GD\\QLDH.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAwwM4AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T15:49:58.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\OrderDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\OrderDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\OrderDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\OrderDtos.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAACcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T07:14:11.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "QLLichHen.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLichHen.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLLichHen.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLichHen.Designer.cs",
+              "RelativeToolTip": "GD\\QLLichHen.Designer.cs",
+              "ViewState": "AgIAAHMBAAAAAAAAAAAswJEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T13:50:41.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmDashboard.cs",
+              "RelativeDocumentMoniker": "GD\\FrmDashboard.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmDashboard.cs [Design]",
+              "RelativeToolTip": "GD\\FrmDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T09:15:16.079Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Home.cs",
+              "RelativeDocumentMoniker": "GD\\Home.cs",
+              "ToolTip": "D:\\B09_SourceCode\\PetSpaWinform\\GD\\Home.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T07:53:10.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmDashboard.cs",
+              "RelativeDocumentMoniker": "GD\\FrmDashboard.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmDashboard.cs",
+              "RelativeToolTip": "GD\\FrmDashboard.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T09:16:04.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Home.cs",
+              "RelativeDocumentMoniker": "GD\\Home.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Home.cs",
+              "RelativeToolTip": "GD\\Home.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAwDEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T14:23:24.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Program.cs",
+              "RelativeDocumentMoniker": "GD\\Program.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Program.cs",
+              "RelativeToolTip": "GD\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T10:53:25.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "QLLichHen.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLichHen.cs",
+              "RelativeDocumentMoniker": "GD\\QLLichHen.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLichHen.cs",
+              "RelativeToolTip": "GD\\QLLichHen.cs",
+              "ViewState": "AgIAAFoBAAAAAAAAAAAAAGMBAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T05:47:20.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\AppointmentService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\AppointmentService.cs",
+              "RelativeToolTip": "GD\\Services\\AppointmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T06:27:45.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\ProductService.cs",
+              "RelativeToolTip": "GD\\Services\\ProductService.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAowFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T06:23:09.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppointmentDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\AppointmentDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\AppointmentDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\AppointmentDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\AppointmentDtos.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAEwB0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T07:15:45.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "QLKH.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKH.cs",
+              "RelativeDocumentMoniker": "GD\\QLKH.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKH.cs",
+              "RelativeToolTip": "GD\\QLKH.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T16:29:03.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "QLKH.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKH.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLKH.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKH.Designer.cs",
+              "RelativeToolTip": "GD\\QLKH.Designer.cs",
+              "ViewState": "AgIAAGgBAAAAAAAAAAAowHYBAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T13:55:07.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\CustomerService.cs",
+              "RelativeToolTip": "GD\\Services\\CustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T12:30:20.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CustomerDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\CustomerDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\CustomerDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\CustomerDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\CustomerDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T11:48:40.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "QLNV.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNV.cs",
+              "RelativeDocumentMoniker": "GD\\QLNV.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNV.cs",
+              "RelativeToolTip": "GD\\QLNV.cs",
+              "ViewState": "AgIAAEYBAAAAAAAAAAAuwGcBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T14:59:44.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PromotionService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\PromotionService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\PromotionService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\PromotionService.cs",
+              "RelativeToolTip": "GD\\Services\\PromotionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T06:23:14.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "QLKM.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKM.cs",
+              "RelativeDocumentMoniker": "GD\\QLKM.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKM.cs",
+              "RelativeToolTip": "GD\\QLKM.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAwMgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T17:14:10.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "QLDV.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDV.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLDV.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDV.Designer.cs",
+              "RelativeToolTip": "GD\\QLDV.Designer.cs",
+              "ViewState": "AgIAAGEBAAAAAAAAAAAqwH4BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T15:35:58.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "QLDV.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDV.cs",
+              "RelativeDocumentMoniker": "GD\\QLDV.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDV.cs",
+              "RelativeToolTip": "GD\\QLDV.cs",
+              "ViewState": "AgIAAEQBAAAAAAAAAAAqwFwBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T14:55:36.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\UserDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\UserDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\UserDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\UserDtos.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA7wA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T14:29:30.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "QLLoaiSP.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLoaiSP.cs",
+              "RelativeDocumentMoniker": "GD\\QLLoaiSP.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLoaiSP.cs",
+              "RelativeToolTip": "GD\\QLLoaiSP.cs",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAuwAMBAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T11:32:39.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "QLNCC.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNCC.cs",
+              "RelativeDocumentMoniker": "GD\\QLNCC.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNCC.cs",
+              "RelativeToolTip": "GD\\QLNCC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T18:12:12.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ServiceService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\ServiceService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\ServiceService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\ServiceService.cs",
+              "RelativeToolTip": "GD\\Services\\ServiceService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T06:23:19.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "SupplierService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\SupplierService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\SupplierService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\SupplierService.cs",
+              "RelativeToolTip": "GD\\Services\\SupplierService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCAAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T06:23:23.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "QLSP.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLSP.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLSP.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLSP.Designer.cs",
+              "RelativeToolTip": "GD\\QLSP.Designer.cs",
+              "ViewState": "AgIAAB8DAAAAAAAAAAAAACgDAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T10:45:56.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\ApiClient.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\ApiClient.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\ApiClient.cs",
+              "RelativeToolTip": "GD\\Services\\ApiClient.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T07:15:51.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "QLSP.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLSP.cs",
+              "RelativeDocumentMoniker": "GD\\QLSP.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLSP.cs",
+              "RelativeToolTip": "GD\\QLSP.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAqwFEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T10:53:08.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "PurchaseOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\PurchaseOrderService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\PurchaseOrderService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\PurchaseOrderService.cs",
+              "RelativeToolTip": "GD\\Services\\PurchaseOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T15:09:13.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\CategoryService.cs",
+              "RelativeToolTip": "GD\\Services\\CategoryService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T11:34:52.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Session.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Session.cs",
+              "RelativeDocumentMoniker": "GD\\Session.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Session.cs",
+              "RelativeToolTip": "GD\\Session.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T03:28:03.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ProductDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\ProductDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\ProductDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\ProductDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\ProductDtos.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T08:02:26.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "PaginationDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\PaginationDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\PaginationDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\PaginationDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\PaginationDtos.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA5wAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T08:00:55.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CommonDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\CommonDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\CommonDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\CommonDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\CommonDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T11:48:38.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CategoryDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\CategoryDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\CategoryDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\CategoryDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\CategoryDtos.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T11:33:27.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\appsettings.json",
+              "RelativeDocumentMoniker": "GD\\appsettings.json",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\appsettings.json",
+              "RelativeToolTip": "GD\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T03:44:02.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\OrderService.cs",
+              "RelativeToolTip": "GD\\Services\\OrderService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T06:23:11.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ServiceDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\ServiceDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\ServiceDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\ServiceDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\ServiceDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T07:06:28.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Resource4.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Resource4.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\Resource4.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Resource4.Designer.cs",
+              "RelativeToolTip": "GD\\Resource4.Designer.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAuwAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T15:10:44.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "QLNV.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNV.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLNV.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNV.Designer.cs",
+              "RelativeToolTip": "GD\\QLNV.Designer.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAQwJkAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T14:47:25.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ThongKe.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\ThongKe.cs",
+              "RelativeDocumentMoniker": "GD\\ThongKe.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\ThongKe.cs",
+              "RelativeToolTip": "GD\\ThongKe.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T15:07:51.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ThongKe.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\ThongKe.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\ThongKe.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\ThongKe.Designer.cs",
+              "RelativeToolTip": "GD\\ThongKe.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T17:07:01.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "QLNCC.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNCC.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLNCC.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNCC.Designer.cs",
+              "RelativeToolTip": "GD\\QLNCC.Designer.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAQwKkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T08:37:30.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "QLLoaiSP.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLoaiSP.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLLoaiSP.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLoaiSP.Designer.cs",
+              "RelativeToolTip": "GD\\QLLoaiSP.Designer.cs",
+              "ViewState": "AgIAAAMBAAAAAAAAAAAQwLAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T11:40:51.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "QLKM.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKM.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLKM.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKM.Designer.cs",
+              "RelativeToolTip": "GD\\QLKM.Designer.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAQwG8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T17:14:17.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "QLGiaoDich.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLGiaoDich.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLGiaoDich.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLGiaoDich.Designer.cs",
+              "RelativeToolTip": "GD\\QLGiaoDich.Designer.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAQwG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T12:05:12.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "QLDH.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDH.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLDH.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDH.Designer.cs",
+              "RelativeToolTip": "GD\\QLDH.Designer.cs",
+              "ViewState": "AgIAAKcCAAAAAAAAAIBJwAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T15:58:18.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "QLGiaoDich.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLGiaoDich.cs",
+              "RelativeDocumentMoniker": "GD\\QLGiaoDich.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLGiaoDich.cs",
+              "RelativeToolTip": "GD\\QLGiaoDich.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAIAwwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T15:08:36.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Home.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Home.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\Home.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Home.Designer.cs",
+              "RelativeToolTip": "GD\\Home.Designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAABlwDMBAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T14:21:28.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "FrmThanhToan.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmThanhToan.cs",
+              "RelativeDocumentMoniker": "GD\\FrmThanhToan.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmThanhToan.cs",
+              "RelativeToolTip": "GD\\FrmThanhToan.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAmwHgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T06:05:24.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "FrmThanhToan.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmThanhToan.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\FrmThanhToan.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmThanhToan.Designer.cs",
+              "RelativeToolTip": "GD\\FrmThanhToan.Designer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T13:42:31.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "FrmDashboard.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmDashboard.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\FrmDashboard.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmDashboard.Designer.cs",
+              "RelativeToolTip": "GD\\FrmDashboard.Designer.cs",
+              "ViewState": "AgIAAJEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T09:16:01.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "FrmChiTietDonHang.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmChiTietDonHang.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\FrmChiTietDonHang.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmChiTietDonHang.Designer.cs",
+              "RelativeToolTip": "GD\\FrmChiTietDonHang.Designer.cs",
+              "ViewState": "AgIAABgBAAAAAAAAAAAQwPgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T05:59:19.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "FrmChiTietDonHang.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmChiTietDonHang.cs",
+              "RelativeDocumentMoniker": "GD\\FrmChiTietDonHang.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmChiTietDonHang.cs",
+              "RelativeToolTip": "GD\\FrmChiTietDonHang.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T06:01:57.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "FrmCheckIn.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmCheckIn.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\FrmCheckIn.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmCheckIn.Designer.cs",
+              "RelativeToolTip": "GD\\FrmCheckIn.Designer.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAQwAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T11:03:51.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "FrmCheckIn.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmCheckIn.cs",
+              "RelativeDocumentMoniker": "GD\\FrmCheckIn.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmCheckIn.cs",
+              "RelativeToolTip": "GD\\FrmCheckIn.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T11:00:22.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "DangNhap.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DangNhap.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\DangNhap.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DangNhap.Designer.cs",
+              "RelativeToolTip": "GD\\DangNhap.Designer.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAQwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T15:08:34.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\UserService.cs",
+              "RelativeToolTip": "GD\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T06:23:22.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\TransactionService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\TransactionService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\TransactionService.cs",
+              "RelativeToolTip": "GD\\Services\\TransactionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T15:07:30.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "DashboardService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\DashboardService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\DashboardService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\DashboardService.cs",
+              "RelativeToolTip": "GD\\Services\\DashboardService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T11:51:23.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\AuthService.cs",
+              "RelativeToolTip": "GD\\Services\\AuthService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T07:16:16.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "TransactionDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\TransactionDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\TransactionDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\TransactionDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\TransactionDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T15:06:08.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "SupplierDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\SupplierDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\SupplierDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\SupplierDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\SupplierDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T15:04:57.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "PurchaseOrderDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\PurchaseOrderDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\PurchaseOrderDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\PurchaseOrderDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\PurchaseOrderDtos.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T15:08:47.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "PromotionDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\PromotionDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\PromotionDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\PromotionDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\PromotionDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T08:02:25.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "DashboardDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\DashboardDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\DashboardDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\DashboardDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\DashboardDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T15:32:22.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "AuthDtos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\AuthDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\AuthDtos.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\AuthDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\AuthDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T07:15:44.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "show.png - PNG [22x22, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Resources\\show.png",
+              "RelativeDocumentMoniker": "GD\\Resources\\show.png",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Resources\\show.png - PNG [22x22, 32 bit, PNG]",
+              "RelativeToolTip": "GD\\Resources\\show.png - PNG [22x22, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-11-26T15:08:27.323Z",
+              "EditorCaption": " - PNG [22x22, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "invisible.png - PNG [22x22, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Resources\\invisible.png",
+              "RelativeDocumentMoniker": "GD\\Resources\\invisible.png",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Resources\\invisible.png - PNG [22x22, 32 bit, PNG]",
+              "RelativeToolTip": "GD\\Resources\\invisible.png - PNG [22x22, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-11-26T15:08:26.191Z",
+              "EditorCaption": " - PNG [22x22, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "close.png - PNG [22x22, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Image\\close.png",
+              "RelativeDocumentMoniker": "GD\\Image\\close.png",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Image\\close.png - PNG [22x22, 32 bit, PNG]",
+              "RelativeToolTip": "GD\\Image\\close.png - PNG [22x22, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-11-26T15:08:21.566Z",
+              "EditorCaption": " - PNG [22x22, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "show.png - PNG [22x22, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Image\\show.png",
+              "RelativeDocumentMoniker": "GD\\Image\\show.png",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Image\\show.png - PNG [22x22, 32 bit, PNG]",
+              "RelativeToolTip": "GD\\Image\\show.png - PNG [22x22, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-11-26T15:08:22.88Z",
+              "EditorCaption": " - PNG [22x22, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "QLDV.resx",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDV.resx",
+              "RelativeDocumentMoniker": "GD\\QLDV.resx",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDV.resx",
+              "RelativeToolTip": "GD\\QLDV.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-12-01T15:08:44.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "QLGiaoDich.resx",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLGiaoDich.resx",
+              "RelativeDocumentMoniker": "GD\\QLGiaoDich.resx",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLGiaoDich.resx",
+              "RelativeToolTip": "GD\\QLGiaoDich.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-12-01T15:09:01.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\Properties\\Resources.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "GD\\Properties\\Resources.Designer.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T07:51:58.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QLDH.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDH.cs",
+              "RelativeDocumentMoniker": "GD\\QLDH.cs",
+              "ToolTip": "D:\\B09_SourceCode\\PetSpaWinform\\GD\\QLDH.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T19:34:49.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QLLichHen.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLichHen.cs",
+              "RelativeDocumentMoniker": "GD\\QLLichHen.cs",
+              "ToolTip": "D:\\B09_SourceCode\\PetSpaWinform\\GD\\QLLichHen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T05:40:56.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "QLSP.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLSP.cs",
+              "RelativeDocumentMoniker": "GD\\QLSP.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\QLSP.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T10:42:30.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "QLKH.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKH.cs",
+              "RelativeDocumentMoniker": "GD\\QLKH.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\QLKH.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T16:42:28.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "QLDV.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDV.cs",
+              "RelativeDocumentMoniker": "GD\\QLDV.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\QLDV.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T18:20:01.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "QLKM.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKM.cs",
+              "RelativeDocumentMoniker": "GD\\QLKM.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\QLKM.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T12:34:41.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "QLNCC.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNCC.cs",
+              "RelativeDocumentMoniker": "GD\\QLNCC.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\QLNCC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T17:15:47.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "QLLoaiSP.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLoaiSP.cs",
+              "RelativeDocumentMoniker": "GD\\QLLoaiSP.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\QLLoaiSP.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T10:12:36.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "FrmThanhToan.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmThanhToan.cs",
+              "RelativeDocumentMoniker": "GD\\FrmThanhToan.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\FrmThanhToan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T13:42:01.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "DangNhap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DangNhap.cs",
+              "RelativeDocumentMoniker": "GD\\DangNhap.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\DangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T07:17:31.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "QLNV.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNV.cs",
+              "RelativeDocumentMoniker": "GD\\QLNV.cs",
+              "ToolTip": "C:\\Users\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\QLNV.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\QLNV.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T13:50:25.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "FrmCheckIn.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmCheckIn.cs",
+              "RelativeDocumentMoniker": "GD\\FrmCheckIn.cs",
+              "ToolTip": "C:\\Users\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\FrmCheckIn.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\FrmCheckIn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T11:00:04.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "FrmChiTietDonHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmChiTietDonHang.cs",
+              "RelativeDocumentMoniker": "GD\\FrmChiTietDonHang.cs",
+              "ToolTip": "C:\\Users\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\FrmChiTietDonHang.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\FrmChiTietDonHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T05:59:10.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "ThongKe.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\ThongKe.cs",
+              "RelativeDocumentMoniker": "GD\\ThongKe.cs",
+              "ToolTip": "C:\\Users\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\ThongKe.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\ThongKe.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T14:22:35.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "QLGiaoDich.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLGiaoDich.cs",
+              "RelativeDocumentMoniker": "GD\\QLGiaoDich.cs",
+              "ToolTip": "C:\\Users\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\QLGiaoDich.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\QLGiaoDich.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T11:31:45.027Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

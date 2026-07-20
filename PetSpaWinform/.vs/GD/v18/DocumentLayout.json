@@ -1,0 +1,1465 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qldh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qldh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qldh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qldh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qllichhen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qllichhen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qllichhen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qllichhen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qllichhen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qllichhen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\orderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\orderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\appointmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\appointmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlkh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlkh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qlsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\customerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\customerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\promotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\promotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlkm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlkm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qldv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qldv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qlkm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlkm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qlncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qlloaisp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlloaisp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qldv.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qldv.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qldv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qldv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlloaisp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlloaisp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlsp.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlsp.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\serviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\serviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\purchaseorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\purchaseorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\productdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\productdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\paginationdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\paginationdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\commondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\commondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\categorydtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\categorydtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\servicedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\servicedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\resource4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\resource4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\thongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\thongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlnv.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlnv.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlncc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlncc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlloaisp.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlloaisp.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlkm.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlkm.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlgiaodich.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlgiaodich.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlgiaodich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlgiaodich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qldh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qldh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\frmthanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmthanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmthanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmthanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmthanhtoan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmthanhtoan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmchitietdonhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmchitietdonhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmchitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmchitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmcheckin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmcheckin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\frmcheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmcheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\transactiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\transactiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\supplierdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\supplierdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\purchaseorderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\purchaseorderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\promotiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\promotiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\dashboarddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\dashboarddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qlnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\frmcheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmcheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\frmchitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\frmchitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\resources\\show.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\resources\\show.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\resources\\invisible.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\resources\\invisible.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\image\\close.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\image\\close.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\image\\show.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\image\\show.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qldv.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qldv.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\qlgiaodich.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlgiaodich.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\gd\\qlgiaodich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\qlgiaodich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|d:\\kltn\\b09_sourcecode\\petspawinform\\gd\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A15693-6A93-44AA-A701-8ED5491D67AD}|GD\\GD.csproj|solutionrelative:gd\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "QLLichHen.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLichHen.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLLichHen.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLichHen.Designer.cs",
+              "RelativeToolTip": "GD\\QLLichHen.Designer.cs",
+              "ViewState": "AgIAAHMBAAAAAAAAAAAswJEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmDashboard.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmDashboard.cs",
+              "RelativeDocumentMoniker": "GD\\FrmDashboard.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2026-07-20T04:16:44.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Home.cs",
+              "RelativeDocumentMoniker": "GD\\Home.cs",
+              "ToolTip": "D:\\B09_SourceCode\\PetSpaWinform\\GD\\Home.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\B09_SourceCode\\PetSpaWinform\\GD\\Home.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmDashboard.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmDashboard.cs",
+              "RelativeDocumentMoniker": "GD\\FrmDashboard.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmDashboard.cs",
+              "RelativeToolTip": "GD\\FrmDashboard.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Program.cs",
+              "RelativeDocumentMoniker": "GD\\Program.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Program.cs",
+              "RelativeToolTip": "GD\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DangNhap.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DangNhap.cs",
+              "RelativeDocumentMoniker": "GD\\DangNhap.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DangNhap.cs [Design]",
+              "RelativeToolTip": "GD\\DangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.222Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\OrderDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\OrderDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\OrderDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\OrderDtos.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAACcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QLDH.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDH.cs",
+              "RelativeDocumentMoniker": "GD\\QLDH.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDH.cs",
+              "RelativeToolTip": "GD\\QLDH.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAwwM4AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "DangNhap.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DangNhap.cs",
+              "RelativeDocumentMoniker": "GD\\DangNhap.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DangNhap.cs",
+              "RelativeToolTip": "GD\\DangNhap.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAqwFcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Home.cs",
+              "RelativeDocumentMoniker": "GD\\Home.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Home.cs",
+              "RelativeToolTip": "GD\\Home.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAwDEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "QLLichHen.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLichHen.cs",
+              "RelativeDocumentMoniker": "GD\\QLLichHen.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLichHen.cs",
+              "RelativeToolTip": "GD\\QLLichHen.cs",
+              "ViewState": "AgIAAFoBAAAAAAAAAAAAAGMBAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\AppointmentService.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\AppointmentService.cs",
+              "RelativeToolTip": "GD\\Services\\AppointmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\ProductService.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\ProductService.cs",
+              "RelativeToolTip": "GD\\Services\\ProductService.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAowFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppointmentDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\AppointmentDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\AppointmentDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\AppointmentDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\AppointmentDtos.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAEwB0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "QLKH.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKH.cs",
+              "RelativeDocumentMoniker": "GD\\QLKH.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKH.cs",
+              "RelativeToolTip": "GD\\QLKH.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "QLKH.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKH.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLKH.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKH.Designer.cs",
+              "RelativeToolTip": "GD\\QLKH.Designer.cs",
+              "ViewState": "AgIAAGgBAAAAAAAAAAAowHYBAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\CustomerService.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\CustomerService.cs",
+              "RelativeToolTip": "GD\\Services\\CustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CustomerDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\CustomerDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\CustomerDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\CustomerDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\CustomerDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "QLNV.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNV.cs",
+              "RelativeDocumentMoniker": "GD\\QLNV.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNV.cs",
+              "RelativeToolTip": "GD\\QLNV.cs",
+              "ViewState": "AgIAAEYBAAAAAAAAAAAuwGcBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PromotionService.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\PromotionService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\PromotionService.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\PromotionService.cs",
+              "RelativeToolTip": "GD\\Services\\PromotionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "QLKM.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKM.cs",
+              "RelativeDocumentMoniker": "GD\\QLKM.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKM.cs",
+              "RelativeToolTip": "GD\\QLKM.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAwMgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "QLDV.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDV.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLDV.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDV.Designer.cs",
+              "RelativeToolTip": "GD\\QLDV.Designer.cs",
+              "ViewState": "AgIAAGEBAAAAAAAAAAAqwH4BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "QLDV.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDV.cs",
+              "RelativeDocumentMoniker": "GD\\QLDV.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDV.cs",
+              "RelativeToolTip": "GD\\QLDV.cs",
+              "ViewState": "AgIAAEQBAAAAAAAAAAAqwFwBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\UserDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\UserDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\UserDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\UserDtos.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA7wA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "QLLoaiSP.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLoaiSP.cs",
+              "RelativeDocumentMoniker": "GD\\QLLoaiSP.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLoaiSP.cs",
+              "RelativeToolTip": "GD\\QLLoaiSP.cs",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAuwAMBAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "QLNCC.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNCC.cs",
+              "RelativeDocumentMoniker": "GD\\QLNCC.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNCC.cs",
+              "RelativeToolTip": "GD\\QLNCC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ServiceService.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\ServiceService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\ServiceService.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\ServiceService.cs",
+              "RelativeToolTip": "GD\\Services\\ServiceService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SupplierService.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\SupplierService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\SupplierService.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\SupplierService.cs",
+              "RelativeToolTip": "GD\\Services\\SupplierService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCAAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "QLSP.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLSP.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLSP.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLSP.Designer.cs",
+              "RelativeToolTip": "GD\\QLSP.Designer.cs",
+              "ViewState": "AgIAAB8DAAAAAAAAAAAAACgDAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\ApiClient.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\ApiClient.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\ApiClient.cs",
+              "RelativeToolTip": "GD\\Services\\ApiClient.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "QLSP.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLSP.cs",
+              "RelativeDocumentMoniker": "GD\\QLSP.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLSP.cs",
+              "RelativeToolTip": "GD\\QLSP.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAqwFEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "PurchaseOrderService.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\PurchaseOrderService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\PurchaseOrderService.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\PurchaseOrderService.cs",
+              "RelativeToolTip": "GD\\Services\\PurchaseOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\CategoryService.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\CategoryService.cs",
+              "RelativeToolTip": "GD\\Services\\CategoryService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Session.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Session.cs",
+              "RelativeDocumentMoniker": "GD\\Session.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Session.cs",
+              "RelativeToolTip": "GD\\Session.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ProductDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\ProductDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\ProductDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\ProductDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\ProductDtos.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "PaginationDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\PaginationDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\PaginationDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\PaginationDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\PaginationDtos.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA5wAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CommonDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\CommonDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\CommonDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\CommonDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\CommonDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "CategoryDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\CategoryDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\CategoryDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\CategoryDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\CategoryDtos.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\appsettings.json",
+              "RelativeDocumentMoniker": "GD\\appsettings.json",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\appsettings.json",
+              "RelativeToolTip": "GD\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-20T04:16:44.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\OrderService.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\OrderService.cs",
+              "RelativeToolTip": "GD\\Services\\OrderService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ServiceDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\ServiceDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\ServiceDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\ServiceDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\ServiceDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Resource4.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Resource4.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\Resource4.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Resource4.Designer.cs",
+              "RelativeToolTip": "GD\\Resource4.Designer.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAuwAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "QLNV.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNV.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLNV.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNV.Designer.cs",
+              "RelativeToolTip": "GD\\QLNV.Designer.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAQwJkAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ThongKe.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\ThongKe.cs",
+              "RelativeDocumentMoniker": "GD\\ThongKe.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\ThongKe.cs",
+              "RelativeToolTip": "GD\\ThongKe.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ThongKe.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\ThongKe.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\ThongKe.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\ThongKe.Designer.cs",
+              "RelativeToolTip": "GD\\ThongKe.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "QLNCC.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNCC.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLNCC.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNCC.Designer.cs",
+              "RelativeToolTip": "GD\\QLNCC.Designer.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAQwKkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "QLLoaiSP.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLoaiSP.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLLoaiSP.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLoaiSP.Designer.cs",
+              "RelativeToolTip": "GD\\QLLoaiSP.Designer.cs",
+              "ViewState": "AgIAAAMBAAAAAAAAAAAQwLAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "QLKM.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKM.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLKM.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKM.Designer.cs",
+              "RelativeToolTip": "GD\\QLKM.Designer.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAQwG8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "QLGiaoDich.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLGiaoDich.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLGiaoDich.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLGiaoDich.Designer.cs",
+              "RelativeToolTip": "GD\\QLGiaoDich.Designer.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAQwG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "QLDH.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDH.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\QLDH.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDH.Designer.cs",
+              "RelativeToolTip": "GD\\QLDH.Designer.cs",
+              "ViewState": "AgIAAKcCAAAAAAAAAIBJwAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "QLGiaoDich.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLGiaoDich.cs",
+              "RelativeDocumentMoniker": "GD\\QLGiaoDich.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLGiaoDich.cs",
+              "RelativeToolTip": "GD\\QLGiaoDich.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAIAwwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Home.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Home.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\Home.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Home.Designer.cs",
+              "RelativeToolTip": "GD\\Home.Designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAABlwDMBAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "FrmThanhToan.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmThanhToan.cs",
+              "RelativeDocumentMoniker": "GD\\FrmThanhToan.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmThanhToan.cs",
+              "RelativeToolTip": "GD\\FrmThanhToan.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAmwHgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "FrmThanhToan.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmThanhToan.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\FrmThanhToan.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmThanhToan.Designer.cs",
+              "RelativeToolTip": "GD\\FrmThanhToan.Designer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "FrmDashboard.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmDashboard.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\FrmDashboard.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmDashboard.Designer.cs",
+              "RelativeToolTip": "GD\\FrmDashboard.Designer.cs",
+              "ViewState": "AgIAAJEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "FrmChiTietDonHang.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmChiTietDonHang.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\FrmChiTietDonHang.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmChiTietDonHang.Designer.cs",
+              "RelativeToolTip": "GD\\FrmChiTietDonHang.Designer.cs",
+              "ViewState": "AgIAABgBAAAAAAAAAAAQwPgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "FrmChiTietDonHang.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmChiTietDonHang.cs",
+              "RelativeDocumentMoniker": "GD\\FrmChiTietDonHang.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmChiTietDonHang.cs",
+              "RelativeToolTip": "GD\\FrmChiTietDonHang.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "FrmCheckIn.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmCheckIn.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\FrmCheckIn.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmCheckIn.Designer.cs",
+              "RelativeToolTip": "GD\\FrmCheckIn.Designer.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAQwAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "FrmCheckIn.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmCheckIn.cs",
+              "RelativeDocumentMoniker": "GD\\FrmCheckIn.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmCheckIn.cs",
+              "RelativeToolTip": "GD\\FrmCheckIn.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "DangNhap.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DangNhap.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\DangNhap.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DangNhap.Designer.cs",
+              "RelativeToolTip": "GD\\DangNhap.Designer.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAQwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\UserService.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\UserService.cs",
+              "RelativeToolTip": "GD\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\TransactionService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\TransactionService.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\TransactionService.cs",
+              "RelativeToolTip": "GD\\Services\\TransactionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "DashboardService.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\DashboardService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\DashboardService.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\DashboardService.cs",
+              "RelativeToolTip": "GD\\Services\\DashboardService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "GD\\Services\\AuthService.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Services\\AuthService.cs",
+              "RelativeToolTip": "GD\\Services\\AuthService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "TransactionDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\TransactionDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\TransactionDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\TransactionDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\TransactionDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "SupplierDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\SupplierDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\SupplierDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\SupplierDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\SupplierDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "PurchaseOrderDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\PurchaseOrderDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\PurchaseOrderDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\PurchaseOrderDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\PurchaseOrderDtos.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "PromotionDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\PromotionDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\PromotionDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\PromotionDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\PromotionDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "DashboardDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\DashboardDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\DashboardDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\DashboardDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\DashboardDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "AuthDtos.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\AuthDtos.cs",
+              "RelativeDocumentMoniker": "GD\\DTOs\\AuthDtos.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\DTOs\\AuthDtos.cs",
+              "RelativeToolTip": "GD\\DTOs\\AuthDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "show.png",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Resources\\show.png",
+              "RelativeDocumentMoniker": "GD\\Resources\\show.png",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Resources\\show.png",
+              "RelativeToolTip": "GD\\Resources\\show.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-07-20T04:16:44.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "invisible.png",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Resources\\invisible.png",
+              "RelativeDocumentMoniker": "GD\\Resources\\invisible.png",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Resources\\invisible.png",
+              "RelativeToolTip": "GD\\Resources\\invisible.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-07-20T04:16:44.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "close.png",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Image\\close.png",
+              "RelativeDocumentMoniker": "GD\\Image\\close.png",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Image\\close.png",
+              "RelativeToolTip": "GD\\Image\\close.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-07-20T04:16:44.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "show.png",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Image\\show.png",
+              "RelativeDocumentMoniker": "GD\\Image\\show.png",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Image\\show.png",
+              "RelativeToolTip": "GD\\Image\\show.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-07-20T04:16:44.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "QLDV.resx",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDV.resx",
+              "RelativeDocumentMoniker": "GD\\QLDV.resx",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDV.resx",
+              "RelativeToolTip": "GD\\QLDV.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-07-20T04:16:44.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "QLGiaoDich.resx",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLGiaoDich.resx",
+              "RelativeDocumentMoniker": "GD\\QLGiaoDich.resx",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLGiaoDich.resx",
+              "RelativeToolTip": "GD\\QLGiaoDich.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-07-20T04:16:44.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "GD\\Properties\\Resources.Designer.cs",
+              "ToolTip": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "GD\\Properties\\Resources.Designer.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:44.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QLDH.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDH.cs",
+              "RelativeDocumentMoniker": "GD\\QLDH.cs",
+              "ToolTip": "D:\\B09_SourceCode\\PetSpaWinform\\GD\\QLDH.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\B09_SourceCode\\PetSpaWinform\\GD\\QLDH.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "QLLichHen.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLichHen.cs",
+              "RelativeDocumentMoniker": "GD\\QLLichHen.cs",
+              "ToolTip": "D:\\B09_SourceCode\\PetSpaWinform\\GD\\QLLichHen.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\B09_SourceCode\\PetSpaWinform\\GD\\QLLichHen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "QLSP.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLSP.cs",
+              "RelativeDocumentMoniker": "GD\\QLSP.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\QLSP.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\PetSpaWinform\\GD\\QLSP.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "QLKH.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKH.cs",
+              "RelativeDocumentMoniker": "GD\\QLKH.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\QLKH.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\PetSpaWinform\\GD\\QLKH.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "QLDV.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLDV.cs",
+              "RelativeDocumentMoniker": "GD\\QLDV.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\QLDV.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\PetSpaWinform\\GD\\QLDV.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "QLKM.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLKM.cs",
+              "RelativeDocumentMoniker": "GD\\QLKM.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\QLKM.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\PetSpaWinform\\GD\\QLKM.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "QLNCC.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNCC.cs",
+              "RelativeDocumentMoniker": "GD\\QLNCC.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\QLNCC.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\PetSpaWinform\\GD\\QLNCC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "QLLoaiSP.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLLoaiSP.cs",
+              "RelativeDocumentMoniker": "GD\\QLLoaiSP.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\QLLoaiSP.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\PetSpaWinform\\GD\\QLLoaiSP.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "FrmThanhToan.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmThanhToan.cs",
+              "RelativeDocumentMoniker": "GD\\FrmThanhToan.cs",
+              "ToolTip": "D:\\PetSpaWinform\\GD\\FrmThanhToan.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\PetSpaWinform\\GD\\FrmThanhToan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "QLNV.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLNV.cs",
+              "RelativeDocumentMoniker": "GD\\QLNV.cs",
+              "ToolTip": "C:\\Users\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\QLNV.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "FrmCheckIn.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmCheckIn.cs",
+              "RelativeDocumentMoniker": "GD\\FrmCheckIn.cs",
+              "ToolTip": "C:\\Users\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\FrmCheckIn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "FrmChiTietDonHang.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\FrmChiTietDonHang.cs",
+              "RelativeDocumentMoniker": "GD\\FrmChiTietDonHang.cs",
+              "ToolTip": "C:\\Users\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\FrmChiTietDonHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "ThongKe.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\ThongKe.cs",
+              "RelativeDocumentMoniker": "GD\\ThongKe.cs",
+              "ToolTip": "C:\\Users\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\ThongKe.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "QLGiaoDich.cs [Design]",
+              "DocumentMoniker": "D:\\KLTN\\B09_SourceCode\\PetSpaWinform\\GD\\QLGiaoDich.cs",
+              "RelativeDocumentMoniker": "GD\\QLGiaoDich.cs",
+              "ToolTip": "C:\\Users\\NHAT TRUONG\\Downloads\\GD_1\\GD\\GD\\QLGiaoDich.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T04:16:45.264Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+﻿using System;
+using System.Data;
+using System.Text;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace GD
+{
+    public partial class PhieuNhapHang : Form
+    {
+        private readonly string connectionString = "Server=127.0.0.1;Database=spathucung;user=root;password=;";
+        private int purchaseOrderId;
+
+        public PhieuNhapHang()
+        {
+            InitializeComponent();
+        }
+
+        public PhieuNhapHang(int purchaseOrderId) : this()
+        {
+            this.purchaseOrderId = purchaseOrderId;
+            LoadDetails();
+        }
+
+        private void LoadDetails()
+        {
+            if (purchaseOrderId <= 0) return;
+
+            try
+            {
+                using var conn = new MySqlConnection(connectionString);
+                conn.Open();
+
+                // Load basic purchase order info + supplier and staff names
+                using (var cmd = new MySqlCommand(@"
+                    SELECT po.total_amount, po.created_at, s.name AS supplier_name, u.full_name AS staff_name
+                    FROM purchase_orders po
+                    LEFT JOIN suppliers s ON po.supplier_id = s.supplier_id
+                    LEFT JOIN users u ON po.user_id = u.user_id
+                    WHERE po.purchase_order_id = @id", conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", purchaseOrderId);
+                    using var reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        lblMaPN.Text = purchaseOrderId.ToString();
+                        lblMaNCC.Text = reader["supplier_name"]?.ToString() ?? string.Empty;
+                        lblNhanVien.Text = reader["staff_name"]?.ToString() ?? string.Empty;
+
+                        if (reader["created_at"] != DBNull.Value && DateTime.TryParse(reader["created_at"].ToString(), out DateTime dt))
+                            lblThoiGian.Text = dt.ToString("dd/MM/yyyy HH:mm");
+
+                        if (reader["total_amount"] != DBNull.Value)
+                        {
+                            var total = Convert.ToDecimal(reader["total_amount"]);
+                            lblTong.Text = total.ToString("N2");
+                            lblTongTien.Text = total.ToString("N2");
+                        }
+                    }
+                }
+
+                // Load all items
+                using (var cmd = new MySqlCommand(@"
+                    SELECT p.name AS product_name, poi.quantity, poi.price
+                    FROM purchase_order_items poi
+                    LEFT JOIN products p ON poi.product_id = p.product_id
+                    WHERE poi.purchase_order_id = @id", conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", purchaseOrderId);
+                    using var reader = cmd.ExecuteReader();
+                    var sb = new StringBuilder();
+                    decimal grandTotal = 0;
+                    while (reader.Read())
+                    {
+                        var pname = reader["product_name"]?.ToString() ?? "(Unknown)";
+                        var qty = reader["quantity"] != DBNull.Value ? Convert.ToInt32(reader["quantity"]) : 0;
+                        var price = reader["price"] != DBNull.Value ? Convert.ToDecimal(reader["price"]) : 0m;
+                        var lineTotal = qty * price;
+                        grandTotal += lineTotal;
+                        sb.AppendLine($"{pname} — Số lượng: {qty} — Giá: {price:N2} — Thành tiền: {lineTotal:N2}");
+                    }
+
+                    lblSanPhamNhap.Text = sb.Length > 0 ? sb.ToString() : "Không có sản phẩm";
+
+                    // If total in purchase_orders differs from sum of items, keep purchase_orders total; otherwise ensure consistency
+                    if (string.IsNullOrWhiteSpace(lblTong.Text) || lblTong == null)
+                    {
+                        lblTong.Text = grandTotal.ToString("N2");
+                        lblTongTien.Text = grandTotal.ToString("N2");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải chi tiết phiếu nhập: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+    }
+}

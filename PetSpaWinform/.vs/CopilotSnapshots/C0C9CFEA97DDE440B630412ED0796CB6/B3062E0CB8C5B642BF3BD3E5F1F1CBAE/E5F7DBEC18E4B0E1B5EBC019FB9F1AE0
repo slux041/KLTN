@@ -1,0 +1,127 @@
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using MySql.Data.MySqlClient;
+using System;
+using System.Windows.Forms;
+using BCrypt.Net;
+
+namespace GD
+{
+    public partial class DangNhap : Form
+    {
+        private readonly string connectionString = "Server=127.0.0.1;Database=spathucung;user=root;password=;";
+
+        public DangNhap()
+        {
+            InitializeComponent();
+        }
+
+        private MySqlConnection GetConnection()
+        {
+            return new MySqlConnection(connectionString);
+        }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            // Kiểm tra xem các điều khiển có tồn tại không
+            if (txtTenDN == null || txtMatKhau == null)
+            {
+                MessageBox.Show("Lỗi: Một hoặc nhiều thành phần giao diện không được tìm thấy!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string userEmail = txtTenDN.Text.Trim(); // giờ đây là email
+            string pass = txtMatKhau.Text.Trim();
+
+            if (string.IsNullOrEmpty(userEmail) || string.IsNullOrEmpty(pass))
+            {
+                MessageBox.Show("Vui lòng nhập email và mật khẩu.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                using (var conn = GetConnection())
+                {
+                    conn.Open();
+                    // Lấy hash mật khẩu, role và trạng thái từ bảng users
+                    string query = "SELECT password_hash, role, status, user_id, full_name FROM users WHERE email = @u LIMIT 1";
+                    using (var cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@u", userEmail);
+
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            if (!reader.Read())
+                            {
+                                MessageBox.Show("Email không tồn tại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+
+                            string storedHash = reader.IsDBNull(reader.GetOrdinal("password_hash")) ? string.Empty : reader.GetString("password_hash");
+                            string status = reader.IsDBNull(reader.GetOrdinal("status")) ? "inactive" : reader.GetString("status");
+                            string role = reader.IsDBNull(reader.GetOrdinal("role")) ? "customer" : reader.GetString("role");
+                            int userId = reader.IsDBNull(reader.GetOrdinal("user_id")) ? 0 : reader.GetInt32("user_id");
+                            string fullName = reader.IsDBNull(reader.GetOrdinal("full_name")) ? string.Empty : reader.GetString("full_name");
+
+                            if (!string.Equals(status, "active", StringComparison.OrdinalIgnoreCase))
+                            {
+                                MessageBox.Show("Tài khoản của bạn hiện không được kích hoạt.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+
+                            // So sánh mật khẩu bằng BCrypt (bảng mới lưu password_hash)
+                            bool verified = false;
+                            if (!string.IsNullOrEmpty(storedHash))
+                            {
+                                try
+                                {
+                                    verified = BCrypt.Net.BCrypt.Verify(pass, storedHash);
+                                }
+                                catch
+                                {
+                                    verified = false;
+                                }
+                            }
+
+                            if (verified)
+                            {
+                                MessageBox.Show($"Bạn đã đăng nhập thành công!\nXin chào: {fullName}", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                this.Hide();
+                                // Bạn có thể chuyển role hoặc userId vào form chính hoặc lưu vào session
+                                // Ví dụ: var main = new FormMain(userId, role); main.Show();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Email hoặc mật khẩu không đúng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi kết nối đến database:\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private bool isPasswordVisible = false;
+        private void pictureBoxEye_Click(object sender, EventArgs e)
+        {
+            if (isPasswordVisible)
+            {
+                // Ẩn mật khẩu
+                txtMatKhau.UseSystemPasswordChar = true;
+                pictureBoxEye.Image = Properties.Resources.show; // icon con mắt đóng
+                isPasswordVisible = false;
+            }
+            else
+            {
+                // Hiện mật khẩu
+                txtMatKhau.UseSystemPasswordChar = false;
+                pictureBoxEye.Image = Properties.Resources.close; // icon con mắt mở
+                isPasswordVisible = true;
+            }
+        }
+
+      
+    }
+}

@@ -1,0 +1,541 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace GD
+{
+    public partial class QLPN : Form
+    {
+        private readonly string connectionString = "Server=127.0.0.1;Database=spathucung;user=root;password=;";
+        private DataTable originalTable;
+        private int currentPurchaseOrderId = 0;
+        public QLPN()
+        {
+            InitializeComponent();
+            SetupDataGridView();
+            LoadSuppliersAndUsers();
+            LoadPurchaseOrders();
+
+            // hook up live search event
+            textBox2.TextChanged += TextBox2_TextChanged;
+
+            // hook up button events
+            button1.Click += Button1_Click; // Thêm
+            button2.Click += Button2_Click; // Sửa
+            button4.Click += Button4_Click; // Xóa
+        }
+      
+        private void SetupDataGridView()
+        {
+            dgvPhieuNhap.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvPhieuNhap.ReadOnly = true;
+            dgvPhieuNhap.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvPhieuNhap.RowHeadersVisible = false;
+            dgvPhieuNhap.BackgroundColor = Color.White;
+            dgvPhieuNhap.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 250, 255);
+
+            dgvPhieuNhap.EnableHeadersVisualStyles = false;
+            dgvPhieuNhap.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(30, 144, 255);
+            dgvPhieuNhap.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvPhieuNhap.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            dgvPhieuNhap.ColumnHeadersHeight = 40;
+        }
+
+        private void LoadSuppliersAndUsers()
+        {
+            try
+            {
+                using var conn = new MySqlConnection(connectionString);
+                conn.Open();
+
+                // Load suppliers
+                using (var cmd = new MySqlCommand("SELECT supplier_id, name FROM suppliers ORDER BY name", conn))
+                using (var adapter = new MySqlDataAdapter(cmd))
+                {
+                    var dtSup = new DataTable();
+                    adapter.Fill(dtSup);
+                    cmbNCC.DisplayMember = "name";
+                    cmbNCC.ValueMember = "supplier_id";
+                    cmbNCC.DataSource = dtSup;
+                }
+
+                // Load users (staff)
+                using (var cmd = new MySqlCommand("SELECT user_id, full_name FROM users ORDER BY full_name", conn))
+                using (var adapter = new MySqlDataAdapter(cmd))
+                {
+                    var dtUsers = new DataTable();
+                    adapter.Fill(dtUsers);
+                    cmbNV.DisplayMember = "full_name";
+                    cmbNV.ValueMember = "user_id";
+                    cmbNV.DataSource = dtUsers;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải danh sách nhà cung cấp/nhân viên:\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void LoadPurchaseOrders()
+        {
+            try
+            {
+                using var conn = new MySqlConnection(connectionString);
+                conn.Open();
+
+                // Join purchase_orders with suppliers, users, purchase_order_items and products
+                string sql = @"
+                    SELECT
+                        po.purchase_order_id,
+                        s.supplier_id,
+                        s.name AS supplier_name,
+                        u.user_id,
+                        u.full_name AS staff_name,
+                        p.product_id,
+                        p.name AS product_name,
+                        poi.quantity,
+                        poi.price,
+                        po.created_at,
+                        po.total_amount
+                    FROM purchase_orders po
+                    JOIN suppliers s ON po.supplier_id = s.supplier_id
+                    JOIN users u ON po.user_id = u.user_id
+                    JOIN purchase_order_items poi ON po.purchase_order_id = poi.purchase_order_id
+                    JOIN products p ON poi.product_id = p.product_id
+                    ORDER BY po.created_at DESC;";
+
+                using var cmd = new MySqlCommand(sql, conn);
+                using var adapter = new MySqlDataAdapter(cmd);
+                var dt = new DataTable();
+                adapter.Fill(dt);
+
+                // make filtering case-insensitive
+                dt.CaseSensitive = false;
+
+                originalTable = dt;
+                dgvPhieuNhap.DataSource = dt;
+
+                // Hide ID columns so user sees only friendly info
+                HideIdColumns();
+
+                // Friendly column headers (if columns exist)
+                if (dgvPhieuNhap.Columns.Contains("purchase_order_id"))
+                    dgvPhieuNhap.Columns["purchase_order_id"].HeaderText = "Mã PN";
+                if (dgvPhieuNhap.Columns.Contains("supplier_id"))
+                    dgvPhieuNhap.Columns["supplier_id"].HeaderText = "Mã NCC";
+                if (dgvPhieuNhap.Columns.Contains("supplier_name"))
+                    dgvPhieuNhap.Columns["supplier_name"].HeaderText = "Nhà cung cấp";
+                if (dgvPhieuNhap.Columns.Contains("user_id"))
+                    dgvPhieuNhap.Columns["user_id"].HeaderText = "Mã NV";
+                if (dgvPhieuNhap.Columns.Contains("staff_name"))
+                    dgvPhieuNhap.Columns["staff_name"].HeaderText = "Nhân viên";
+                if (dgvPhieuNhap.Columns.Contains("product_id"))
+                    dgvPhieuNhap.Columns["product_id"].HeaderText = "Mã SP";
+                if (dgvPhieuNhap.Columns.Contains("product_name"))
+                    dgvPhieuNhap.Columns["product_name"].HeaderText = "Sản phẩm";
+                if (dgvPhieuNhap.Columns.Contains("quantity"))
+                    dgvPhieuNhap.Columns["quantity"].HeaderText = "Số lượng";
+                if (dgvPhieuNhap.Columns.Contains("price"))
+                    dgvPhieuNhap.Columns["price"].HeaderText = "Giá nhập";
+                if (dgvPhieuNhap.Columns.Contains("created_at"))
+                    dgvPhieuNhap.Columns["created_at"].HeaderText = "Thời gian";
+                if (dgvPhieuNhap.Columns.Contains("total_amount"))
+                    dgvPhieuNhap.Columns["total_amount"].HeaderText = "Tổng tiền";
+
+                // Format numeric and date columns
+                if (dgvPhieuNhap.Columns.Contains("price"))
+                    dgvPhieuNhap.Columns["price"].DefaultCellStyle.Format = "N2";
+                if (dgvPhieuNhap.Columns.Contains("total_amount"))
+                    dgvPhieuNhap.Columns["total_amount"].DefaultCellStyle.Format = "N2";
+                if (dgvPhieuNhap.Columns.Contains("created_at"))
+                    dgvPhieuNhap.Columns["created_at"].DefaultCellStyle.Format = "g"; // general date/time
+
+                // Select first row by default and load details
+                if (dgvPhieuNhap.Rows.Count > 0)
+                {
+                    dgvPhieuNhap.ClearSelection();
+                    dgvPhieuNhap.Rows[0].Selected = true;
+                    if (dgvPhieuNhap.Rows[0].Cells["purchase_order_id"].Value != null)
+                    {
+                        currentPurchaseOrderId = Convert.ToInt32(dgvPhieuNhap.Rows[0].Cells["purchase_order_id"].Value);
+                        LoadPurchaseOrderDetails(currentPurchaseOrderId);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải dữ liệu phiếu nhập:\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void HideIdColumns()
+        {
+            if (dgvPhieuNhap.Columns == null) return;
+            if (dgvPhieuNhap.Columns.Contains("purchase_order_id"))
+                dgvPhieuNhap.Columns["purchase_order_id"].Visible = false;
+            if (dgvPhieuNhap.Columns.Contains("supplier_id"))
+                dgvPhieuNhap.Columns["supplier_id"].Visible = false;
+            if (dgvPhieuNhap.Columns.Contains("user_id"))
+                dgvPhieuNhap.Columns["user_id"].Visible = false;
+        }
+
+        private void FilterPurchaseOrdersByProduct(string query)
+        {
+            if (originalTable == null)
+                return;
+
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                dgvPhieuNhap.DataSource = originalTable;
+            }
+            else
+            {
+                // escape single quotes for RowFilter
+                var q = query.Replace("'", "''");
+                var dv = originalTable.DefaultView;
+                dv.RowFilter = $"product_name LIKE '%{q}%'";
+                dgvPhieuNhap.DataSource = dv;
+            }
+
+            // ensure ID columns remain hidden after binding
+            HideIdColumns();
+        }
+
+        private void TextBox2_TextChanged(object? sender, EventArgs e)
+        {
+            FilterPurchaseOrdersByProduct(textBox2.Text.Trim());
+        }
+
+        // Add button click - insert purchase order and one item
+        private void Button1_Click(object? sender, EventArgs e)
+        {
+            try
+            {
+                if (cmbNCC.SelectedValue == null || cmbNV.SelectedValue == null)
+                {
+                    MessageBox.Show("Chọn nhà cung cấp và nhân viên.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(textBox4.Text) || string.IsNullOrWhiteSpace(textBox5.Text))
+                {
+                    MessageBox.Show("Vui lòng nhập thông tin sản phẩm, số lượng và giá.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (!int.TryParse(textBox4.Text.Trim(), out int quantity) || quantity <= 0)
+                {
+                    MessageBox.Show("Số lượng không hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (!decimal.TryParse(textBox5.Text.Trim(), out decimal price) || price < 0)
+                {
+                    MessageBox.Show("Giá không hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var supplierId = Convert.ToInt32(cmbNCC.SelectedValue);
+                var userId = Convert.ToInt32(cmbNV.SelectedValue);
+                var createdAt = dtpNgayNhap.Value;
+                var total = quantity * price;
+
+                using var conn = new MySqlConnection(connectionString);
+                conn.Open();
+                using var tran = conn.BeginTransaction();
+                try
+                {
+                    // insert purchase_orders
+                    using (var cmd = new MySqlCommand("INSERT INTO purchase_orders (supplier_id, user_id, total_amount, created_at) VALUES (@sup, @user, @total, @created)", conn, tran))
+                    {
+                        cmd.Parameters.AddWithValue("@sup", supplierId);
+                        cmd.Parameters.AddWithValue("@user", userId);
+                        cmd.Parameters.AddWithValue("@total", total);
+                        cmd.Parameters.AddWithValue("@created", createdAt);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    long newPoId = 0;
+                    using (var cmd = new MySqlCommand("SELECT LAST_INSERT_ID()", conn, tran))
+                    {
+                        newPoId = Convert.ToInt64(cmd.ExecuteScalar());
+                    }
+
+                    // find product id by name
+                    int productId = GetProductIdByName(conn, tran, textBox3.Text.Trim());
+                    if (productId <= 0)
+                    {
+                        tran.Rollback();
+                        MessageBox.Show("Không tìm thấy sản phẩm có tên trên.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    // insert purchase_order_items
+                    using (var cmd = new MySqlCommand("INSERT INTO purchase_order_items (purchase_order_id, product_id, quantity, price) VALUES (@po, @p, @q, @price)", conn, tran))
+                    {
+                        cmd.Parameters.AddWithValue("@po", newPoId);
+                        cmd.Parameters.AddWithValue("@p", productId);
+                        cmd.Parameters.AddWithValue("@q", quantity);
+                        cmd.Parameters.AddWithValue("@price", price);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    tran.Commit();
+                    MessageBox.Show("Thêm phiếu nhập thành công.", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadPurchaseOrders();
+                }
+                catch
+                {
+                    tran.Rollback();
+                    throw;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi thêm phiếu nhập:\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // Edit button click - update selected purchase order and its first item
+        private void Button2_Click(object? sender, EventArgs e)
+        {
+            try
+            {
+                if (currentPurchaseOrderId <= 0)
+                {
+                    MessageBox.Show("Chọn một phiếu nhập để sửa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (cmbNCC.SelectedValue == null || cmbNV.SelectedValue == null)
+                {
+                    MessageBox.Show("Chọn nhà cung cấp và nhân viên.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (!int.TryParse(textBox4.Text.Trim(), out int quantity) || quantity <= 0)
+                {
+                    MessageBox.Show("Số lượng không hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (!decimal.TryParse(textBox5.Text.Trim(), out decimal price) || price < 0)
+                {
+                    MessageBox.Show("Giá không hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var supplierId = Convert.ToInt32(cmbNCC.SelectedValue);
+                var userId = Convert.ToInt32(cmbNV.SelectedValue);
+                var total = quantity * price;
+
+                using var conn = new MySqlConnection(connectionString);
+                conn.Open();
+                using var tran = conn.BeginTransaction();
+                try
+                {
+                    // update purchase_orders
+                    using (var cmd = new MySqlCommand("UPDATE purchase_orders SET supplier_id=@sup, user_id=@user, total_amount=@total WHERE purchase_order_id=@id", conn, tran))
+                    {
+                        cmd.Parameters.AddWithValue("@sup", supplierId);
+                        cmd.Parameters.AddWithValue("@user", userId);
+                        cmd.Parameters.AddWithValue("@total", total);
+                        cmd.Parameters.AddWithValue("@id", currentPurchaseOrderId);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    // find product id by name
+                    int productId = GetProductIdByName(conn, tran, textBox3.Text.Trim());
+                    if (productId <= 0)
+                    {
+                        tran.Rollback();
+                        MessageBox.Show("Không tìm thấy sản phẩm có tên trên.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    // update first purchase_order_items row for this PO if exists, else insert
+                    using (var cmd = new MySqlCommand("SELECT id FROM purchase_order_items WHERE purchase_order_id=@po LIMIT 1", conn, tran))
+                    {
+                        cmd.Parameters.AddWithValue("@po", currentPurchaseOrderId);
+                        var obj = cmd.ExecuteScalar();
+                        if (obj != null)
+                        {
+                            var itemId = Convert.ToInt32(obj);
+                            using var up = new MySqlCommand("UPDATE purchase_order_items SET product_id=@p, quantity=@q, price=@price WHERE id=@id", conn, tran);
+                            up.Parameters.AddWithValue("@p", productId);
+                            up.Parameters.AddWithValue("@q", quantity);
+                            up.Parameters.AddWithValue("@price", price);
+                            up.Parameters.AddWithValue("@id", itemId);
+                            up.ExecuteNonQuery();
+                        }
+                        else
+                        {
+                            using var ins = new MySqlCommand("INSERT INTO purchase_order_items (purchase_order_id, product_id, quantity, price) VALUES (@po, @p, @q, @price)", conn, tran);
+                            ins.Parameters.AddWithValue("@po", currentPurchaseOrderId);
+                            ins.Parameters.AddWithValue("@p", productId);
+                            ins.Parameters.AddWithValue("@q", quantity);
+                            ins.Parameters.AddWithValue("@price", price);
+                            ins.ExecuteNonQuery();
+                        }
+                    }
+
+                    tran.Commit();
+                    MessageBox.Show("Cập nhật phiếu nhập thành công.", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadPurchaseOrders();
+                }
+                catch
+                {
+                    tran.Rollback();
+                    throw;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi cập nhật phiếu nhập:\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // Delete button click - delete selected purchase order
+        private void Button4_Click(object? sender, EventArgs e)
+        {
+            try
+            {
+                if (currentPurchaseOrderId <= 0)
+                {
+                    MessageBox.Show("Chọn một phiếu nhập để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                var confirm = MessageBox.Show("Bạn có chắc muốn xóa phiếu nhập này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (confirm != DialogResult.Yes) return;
+
+                using var conn = new MySqlConnection(connectionString);
+                conn.Open();
+                using var cmd = new MySqlCommand("DELETE FROM purchase_orders WHERE purchase_order_id=@id", conn);
+                cmd.Parameters.AddWithValue("@id", currentPurchaseOrderId);
+                var affected = cmd.ExecuteNonQuery();
+                if (affected > 0)
+                {
+                    MessageBox.Show("Xóa phiếu nhập thành công.", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadPurchaseOrders();
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy phiếu nhập để xóa.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi xóa phiếu nhập:\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // helper to find product id by name
+        private int GetProductIdByName(MySqlConnection conn, MySqlTransaction? tran, string productName)
+        {
+            using var cmd = new MySqlCommand("SELECT product_id FROM products WHERE name = @name LIMIT 1", conn, tran);
+            cmd.Parameters.AddWithValue("@name", productName);
+            var obj = cmd.ExecuteScalar();
+            if (obj == null || obj == DBNull.Value) return -1;
+            return Convert.ToInt32(obj);
+        }
+
+        private void LoadPurchaseOrderDetails(int purchaseOrderId)
+        {
+            try
+            {
+                using var conn = new MySqlConnection(connectionString);
+                conn.Open();
+
+                // Get basic purchase order info
+                using (var cmd = new MySqlCommand(@"SELECT po.purchase_order_id, po.supplier_id, po.user_id, po.total_amount, po.created_at
+                                                    FROM purchase_orders po
+                                                    WHERE po.purchase_order_id = @id", conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", purchaseOrderId);
+                    using var reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        lblMaPN.Text = reader["purchase_order_id"].ToString();
+
+                        // Set supplier combo
+                        if (reader["supplier_id"] != DBNull.Value)
+                        {
+                            var supId = Convert.ToInt32(reader["supplier_id"]);
+                            if (cmbNCC.Items.Count > 0)
+                                cmbNCC.SelectedValue = supId;
+                        }
+
+                        // Set user/staff combo
+                        if (reader["user_id"] != DBNull.Value)
+                        {
+                            var userId = Convert.ToInt32(reader["user_id"]);
+                            if (cmbNV.Items.Count > 0)
+                                cmbNV.SelectedValue = userId;
+                        }
+
+                        // Total and created date
+                        if (reader["total_amount"] != DBNull.Value)
+                            lblTongTien.Text = Convert.ToDecimal(reader["total_amount"]).ToString("N2");
+                        if (reader["created_at"] != DBNull.Value && DateTime.TryParse(reader["created_at"].ToString(), out DateTime dt))
+                            dtpNgayNhap.Value = dt;
+                    }
+                    else
+                    {
+                        // Clear fields if no data
+                        lblMaPN.Text = string.Empty;
+                        lblTongTien.Text = string.Empty;
+                    }
+                }
+
+                // Load first item of the purchase order (if any) to show product, quantity, price
+                using (var cmd2 = new MySqlCommand(@"SELECT p.name AS product_name, poi.quantity, poi.price
+                                                     FROM purchase_order_items poi
+                                                     JOIN products p ON poi.product_id = p.product_id
+                                                     WHERE poi.purchase_order_id = @id
+                                                     LIMIT 1", conn))
+                {
+                    cmd2.Parameters.AddWithValue("@id", purchaseOrderId);
+                    using var reader2 = cmd2.ExecuteReader();
+                    if (reader2.Read())
+                    {
+                        textBox3.Text = reader2["product_name"].ToString();
+                        textBox4.Text = reader2["quantity"].ToString();
+                        textBox5.Text = reader2["price"].ToString();
+                    }
+                    else
+                    {
+                        textBox3.Text = string.Empty;
+                        textBox4.Text = string.Empty;
+                        textBox5.Text = string.Empty;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải chi tiết phiếu nhập:\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dgvPhieuNhap_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Cập nhật currentPurchaseOrderId khi người dùng chọn hàng
+            if (e.RowIndex >= 0 && dgvPhieuNhap.Rows.Count > e.RowIndex)
+            {
+                var cell = dgvPhieuNhap.Rows[e.RowIndex].Cells["purchase_order_id"];
+                if (cell != null && cell.Value != null && int.TryParse(cell.Value.ToString(), out int id))
+                {
+                    currentPurchaseOrderId = id;
+                    LoadPurchaseOrderDetails(currentPurchaseOrderId);
+                }
+            }
+        }
+    }
+}

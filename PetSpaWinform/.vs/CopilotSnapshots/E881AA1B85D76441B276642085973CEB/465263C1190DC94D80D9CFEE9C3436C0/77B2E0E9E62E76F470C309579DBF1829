@@ -1,0 +1,233 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace GD
+{
+    public partial class DangKi : Form
+    {
+        private readonly string connectionString = "Server=127.0.0.1;Database=spathucung;user=root;password=;";
+
+        private bool isMatKhauVisible1 = false; // false = masked
+        private bool isMatKhauVisible2 = false;
+
+        public DangKi()
+        {
+            InitializeComponent();
+
+            // Ẩn ký tự mật khẩu
+            txtMatKhau.UseSystemPasswordChar = true;
+            txtNhapLaiMatKhau.UseSystemPasswordChar = true;
+
+            // Thêm chức vụ vào combobox
+            cbChucVu.Items.AddRange(new string[] { "Nhân viên", "Quản lý" });
+            cbChucVu.SelectedIndex = 0; // Mặc định là Nhân viên
+
+            // Make the eye icons clickable
+            pictureBox3.Cursor = Cursors.Hand;
+            pictureBox4.Cursor = Cursors.Hand;
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+
+            // Ensure picture boxes are visible and set initial images
+            pictureBox3.Visible = true;
+            pictureBox4.Visible = true;
+            UpdateEyeImages();
+        }
+
+        private void UpdateEyeImages()
+        {
+            // For masked state show an open-eye icon; for visible state show the closed-eye graphic the user requested
+            pictureBox3.Image?.Dispose();
+            pictureBox4.Image?.Dispose();
+
+            pictureBox3.Image = isMatKhauVisible1 ? CreateClosedEyeBitmap(pictureBox3.Width, pictureBox3.Height, Color.Black)
+                                                 : CreateOpenEyeBitmap(pictureBox3.Width, pictureBox3.Height, Color.Black);
+
+            pictureBox4.Image = isMatKhauVisible2 ? CreateClosedEyeBitmap(pictureBox4.Width, pictureBox4.Height, Color.Black)
+                                                  : CreateOpenEyeBitmap(pictureBox4.Width, pictureBox4.Height, Color.Black);
+        }
+
+        private Bitmap CreateClosedEyeBitmap(int width, int height, Color color)
+        {
+            if (width <= 0) width = 24;
+            if (height <= 0) height = 24;
+            var bmp = new Bitmap(width, height);
+            using (var g = Graphics.FromImage(bmp))
+            {
+                g.Clear(Color.Transparent);
+                g.SmoothingMode = SmoothingMode.AntiAlias;
+                float penWidth = Math.Max(3f, Math.Min(width, height) / 8f);
+                using (var pen = new Pen(color, penWidth) { StartCap = LineCap.Round, EndCap = LineCap.Round })
+                {
+                    // Arc for the eyelid (a simple curved stroke)
+                    RectangleF rect = new RectangleF(width * 0.08f, height * 0.30f, width * 0.84f, height * 0.6f);
+                    g.DrawArc(pen, rect, 200, 140);
+
+                    // Draw lashes as short lines from the arc
+                    int lashes = 5;
+                    for (int i = 0; i < lashes; i++)
+                    {
+                        float t = (i + 1) / (float)(lashes + 1);
+                        double angleDeg = 200 + 140 * t; // between 200 and 340
+                        double angle = angleDeg * Math.PI / 180.0;
+
+                        float cx = rect.Left + rect.Width / 2f;
+                        float cy = rect.Top + rect.Height / 2f;
+                        float rx = rect.Width / 2f;
+                        float ry = rect.Height / 2f;
+
+                        float x = cx + rx * (float)Math.Cos(angle);
+                        float y = cy + ry * (float)Math.Sin(angle);
+
+                        // lash length
+                        float lx = x + (float)Math.Cos(angle) * (width * 0.12f);
+                        float ly = y + (float)Math.Sin(angle) * (height * 0.08f);
+
+                        g.DrawLine(pen, x, y, lx, ly);
+                    }
+                }
+            }
+            return bmp;
+        }
+
+        private Bitmap CreateOpenEyeBitmap(int width, int height, Color color)
+        {
+            if (width <= 0) width = 24;
+            if (height <= 0) height = 24;
+            var bmp = new Bitmap(width, height);
+            using (var g = Graphics.FromImage(bmp))
+            {
+                g.Clear(Color.Transparent);
+                g.SmoothingMode = SmoothingMode.AntiAlias;
+                float penWidth = Math.Max(2f, Math.Min(width, height) / 10f);
+                using (var pen = new Pen(color, penWidth) { StartCap = LineCap.Round, EndCap = LineCap.Round })
+                {
+                    // Eye outline (oval)
+                    RectangleF rect = new RectangleF(width * 0.08f, height * 0.28f, width * 0.84f, height * 0.44f);
+                    g.DrawEllipse(pen, rect);
+
+                    // Pupil
+                    float px = width / 2f;
+                    float py = rect.Top + rect.Height / 2f;
+                    float pr = Math.Min(width, height) * 0.10f;
+                    using (var brush = new SolidBrush(color))
+                    {
+                        g.FillEllipse(brush, px - pr, py - pr, pr * 2, pr * 2);
+                    }
+                }
+            }
+            return bmp;
+        }
+
+        private void ToggleMatKhau()
+        {
+            isMatKhauVisible1 = !isMatKhauVisible1;
+            txtMatKhau.UseSystemPasswordChar = !isMatKhauVisible1;
+            UpdateEyeImages();
+        }
+
+        private void ToggleNhapLaiMatKhau()
+        {
+            isMatKhauVisible2 = !isMatKhauVisible2;
+            txtNhapLaiMatKhau.UseSystemPasswordChar = !isMatKhauVisible2;
+            UpdateEyeImages();
+        }
+
+        private void btnDangKy_Click(object sender, EventArgs e)
+        {
+
+            string tenTK = txtDangNhap.Text.Trim();
+            string maNV = txtMaNV.Text.Trim();
+            string matKhau = txtMatKhau.Text.Trim();
+            string nhapLai = txtNhapLaiMatKhau.Text.Trim();
+            string chucVu = cbChucVu.SelectedItem?.ToString();
+
+            // Kiểm tra dữ liệu
+            if (string.IsNullOrEmpty(tenTK) || string.IsNullOrEmpty(maNV) ||
+                string.IsNullOrEmpty(matKhau) || string.IsNullOrEmpty(nhapLai))
+            {
+                MessageBox.Show(" Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (matKhau != nhapLai)
+            {
+                MessageBox.Show("❌ Mật khẩu và xác nhận mật khẩu không khớp!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Đăng ký tài khoản
+            DangKyTaiKhoan(tenTK, maNV, matKhau, chucVu);
+
+        }
+        private void DangKyTaiKhoan(string tenTK, string maNV, string matKhau, string chucVu)
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string sql = "INSERT INTO TaiKhoan (TenTK, MatKhau, MaNV, Quyen) VALUES (@tk, @mk, @manv, @q)";
+                    using (var cmd = new MySqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@tk", tenTK);
+                        cmd.Parameters.AddWithValue("@mk", matKhau);
+                        cmd.Parameters.AddWithValue("@manv", maNV);
+                        cmd.Parameters.AddWithValue("@q", chucVu.ToLower() == "quản lý" ? "admin" : "nhanvien");
+
+                        int rows = cmd.ExecuteNonQuery();
+
+                        if (rows > 0)
+                        {
+                            MessageBox.Show(" Đăng ký thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide(); // Ẩn form đăng ký
+                            DangNhap dangNhapForm = new DangNhap();
+                            dangNhapForm.ShowDialog(); // Mở form đăng nhập
+                            this.Close(); // Đóng form đăng ký
+                        }
+                        else
+                        {
+                            MessageBox.Show("❌ Đăng ký thất bại. Vui lòng thử lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.Contains("Duplicate entry"))
+                {
+                    MessageBox.Show(" Tên tài khoản đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (ex.Message.Contains("foreign key constraint fails"))
+                {
+                    MessageBox.Show(" Mã nhân viên không tồn tại trong hệ thống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi kết nối database:\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            // keep compatibility with designer click
+            ToggleMatKhau();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            ToggleNhapLaiMatKhau();
+        }
+    }
+}
+

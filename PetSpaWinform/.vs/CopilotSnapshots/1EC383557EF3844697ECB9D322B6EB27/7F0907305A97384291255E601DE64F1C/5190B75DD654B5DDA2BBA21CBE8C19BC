@@ -1,0 +1,408 @@
+﻿using System;
+using System.Data;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace GD
+{
+    public partial class QLSP : Form
+    {
+        private readonly string connectionString = "Server=127.0.0.1;Database=SpaThuCung;user=root;password=;";
+        private DataTable dtSanPham;
+        private DataView dvSanPham;
+
+        public QLSP()
+        {
+            InitializeComponent();
+            LoadSanPham();
+            dgvSanPham.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvSanPham.MultiSelect = false;
+            dgvSanPham.ReadOnly = true;
+            ClearFields();
+            SetupDataGridView();
+        }
+        private void SetupDataGridView()
+        {
+            var dgv = dgvSanPham;
+
+            dgv.BorderStyle = BorderStyle.None;
+            dgv.BackgroundColor = Color.White;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // Header
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(30, 144, 255);
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+            dgv.ColumnHeadersHeight = 40;
+
+            // Dòng
+            dgv.DefaultCellStyle.Font = new Font("Segoe UI", 11);
+            dgv.DefaultCellStyle.BackColor = Color.White;
+            dgv.DefaultCellStyle.ForeColor = Color.Black;
+            dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(255, 230, 150);
+            dgv.DefaultCellStyle.SelectionForeColor = Color.Black;
+
+            // Dòng xen kẽ
+            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 245, 245);
+
+            // Viền ô
+            dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgv.GridColor = Color.LightGray;
+
+            // Không sửa trực tiếp
+            dgv.ReadOnly = true;
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            // Ẩn row header
+            dgv.RowHeadersVisible = false;
+
+            // Chiều cao dòng
+            dgv.RowTemplate.Height = 35;
+        }
+
+        private void LoadSanPham()
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    // SỬ DỤNG BẢNG products theo schema mới
+                    string query = @"
+                        SELECT product_id, name, description, price, unit, stock_quantity, category_id, image_url, is_active
+                        FROM products
+                        ORDER BY product_id";
+
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
+                    dtSanPham = new DataTable();
+                    adapter.Fill(dtSanPham);
+
+                    // Thêm cột hiển thị trạng thái dạng text (bán / ngưng bán)
+                    if (!dtSanPham.Columns.Contains("trang_thai"))
+                    {
+                        dtSanPham.Columns.Add("trang_thai", typeof(string));
+                        foreach (DataRow r in dtSanPham.Rows)
+                        {
+                            int val = 0;
+                            if (r["is_active"] != DBNull.Value)
+                                int.TryParse(r["is_active"].ToString(), out val);
+                            r["trang_thai"] = val == 1 ? "bán" : "ngưng bán";
+                        }
+                    }
+
+                    dvSanPham = new DataView(dtSanPham);
+                    dgvSanPham.DataSource = dvSanPham;
+
+                    // Đặt tiêu đề cột (nếu tồn tại)
+                    if (dgvSanPham.Columns.Contains("product_id")) dgvSanPham.Columns["product_id"].HeaderText = "Mã sản phẩm";
+                    if (dgvSanPham.Columns.Contains("name")) dgvSanPham.Columns["name"].HeaderText = "Tên sản phẩm";
+                    if (dgvSanPham.Columns.Contains("description")) dgvSanPham.Columns["description"].HeaderText = "Mô tả";
+                    if (dgvSanPham.Columns.Contains("price")) dgvSanPham.Columns["price"].HeaderText = "Giá";
+                    if (dgvSanPham.Columns.Contains("unit")) dgvSanPham.Columns["unit"].HeaderText = "Đơn vị";
+                    if (dgvSanPham.Columns.Contains("stock_quantity")) dgvSanPham.Columns["stock_quantity"].HeaderText = "Số lượng tồn";
+                    if (dgvSanPham.Columns.Contains("category_id")) dgvSanPham.Columns["category_id"].HeaderText = "Mã danh mục";
+                    if (dgvSanPham.Columns.Contains("image_url"))
+                    {
+                        // Ẩn cột ảnh theo yêu cầu
+                        dgvSanPham.Columns["image_url"].Visible = false;
+                    }
+
+                    // Hiển thị cột trạng thái dạng text
+                    if (dgvSanPham.Columns.Contains("trang_thai"))
+                    {
+                        dgvSanPham.Columns["trang_thai"].HeaderText = "Trạng thái";
+                    }
+
+                    // Ẩn cột is_active thô nếu có
+                    if (dgvSanPham.Columns.Contains("is_active"))
+                    {
+                        dgvSanPham.Columns["is_active"].Visible = false;
+                    }
+
+                    // Tự động điều chỉnh cột
+                    dgvSanPham.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                    // Khởi tạo combobox trạng thái nếu tồn tại trên form
+                    try
+                    {
+                        if (cmbTrangThai != null)
+                        {
+                            cmbTrangThai.Items.Clear();
+                            cmbTrangThai.Items.Add("bán");
+                            cmbTrangThai.Items.Add("ngưng bán");
+                        }
+                    }
+                    catch
+                    {
+                        // Nếu control không tồn tại hoặc lỗi, bỏ qua
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối CSDL: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void dgvSanPham_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvSanPham.CurrentRow != null && dgvSanPham.CurrentRow.Cells[0].Value != null)
+            {
+                var row = dgvSanPham.CurrentRow;
+
+                // Ánh xạ các trường mới sang các điều khiển hiện có trên form
+                txtMaSP.Text = row.Cells["product_id"].Value?.ToString() ?? "";
+                txtTenSP.Text = row.Cells["name"].Value?.ToString() ?? "";
+                txtMoTa.Text = row.Cells["description"].Value?.ToString() ?? "";
+                // Giá -> dùng txtGiaBan
+                txtGiaBan.Text = row.Cells["price"].Value?.ToString() ?? "";
+                // Đơn vị -> dùng txtGiaNhap (nếu form chưa có textbox cho đơn vị, reuse existing)
+                txtGiaNhap.Text = row.Cells["unit"].Value?.ToString() ?? "";
+                txtSL.Text = row.Cells["stock_quantity"].Value?.ToString() ?? "";
+                // category_id -> txtLoai
+                txtLoai.Text = row.Cells["category_id"].Value?.ToString() ?? "";
+
+                // Trang thai -> cmbTrangThai
+                try
+                {
+                    if (cmbTrangThai != null)
+                    {
+                        string tt = "bán";
+                        if (dgvSanPham.Columns.Contains("trang_thai"))
+                        {
+                            tt = row.Cells["trang_thai"].Value?.ToString() ?? "bán";
+                        }
+                        else if (dgvSanPham.Columns.Contains("is_active"))
+                        {
+                            var v = row.Cells["is_active"].Value?.ToString() ?? "1";
+                            tt = v == "1" ? "bán" : "ngưng bán";
+                        }
+
+                        if (!cmbTrangThai.Items.Contains(tt))
+                        {
+                            cmbTrangThai.Items.Clear();
+                            cmbTrangThai.Items.Add("bán");
+                            cmbTrangThai.Items.Add("ngưng bán");
+                        }
+
+                        cmbTrangThai.SelectedItem = tt;
+                    }
+                }
+                catch
+                {
+                    // ignore if cmb not present
+                }
+            }
+        }
+
+        private void txtTimkiemMa_TextChanged(object sender, EventArgs e)
+        {
+            if (dvSanPham == null) return;
+
+            string keyword = txtTimkiemMa.Text.Trim().Replace("'", "''");
+
+            if (string.IsNullOrEmpty(keyword))
+                dvSanPham.RowFilter = "";
+            else
+                // product_id is numeric; allow searching by string representation
+                dvSanPham.RowFilter = $"Convert(product_id, 'System.String') LIKE '%{keyword}%'";
+
+            // Tự động chọn dòng đầu tiên nếu có kết quả
+            if (dgvSanPham.Rows.Count > 0)
+            {
+                dgvSanPham.Rows[0].Selected = true;
+                dgvSanPham.CurrentCell = dgvSanPham.Rows[0].Cells[0];
+            }
+        }
+
+        private void txtTimKiemTen_TextChanged(object sender, EventArgs e)
+        {
+            if (dvSanPham == null) return;
+
+            string keyword = txtTimKiemTen.Text.Trim().Replace("'", "''");
+
+            if (string.IsNullOrEmpty(keyword))
+            {
+                dvSanPham.RowFilter = ""; // Hiện tất cả nếu chưa nhập
+            }
+            else
+            {
+                dvSanPham.RowFilter = $"name LIKE '%{keyword}%'";
+            }
+
+            // Tự động chọn dòng đầu tiên nếu có kết quả
+            if (dgvSanPham.Rows.Count > 0)
+            {
+                dgvSanPham.Rows[0].Selected = true;
+                dgvSanPham.CurrentCell = dgvSanPham.Rows[0].Cells[0];
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    // product_id là auto-increment → không chèn product_id
+                    string query = @"INSERT INTO products 
+                            (category_id, name, price, unit, stock_quantity, description, image_url, is_active)
+                            VALUES (@category_id, @name, @price, @unit, @stock_quantity, @description, @image_url, @is_active)";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        // Parse values safely
+                        int categoryId = 0;
+                        int.TryParse(txtLoai.Text.Trim(), out categoryId);
+
+                        decimal price = 0m;
+                        decimal.TryParse(txtGiaBan.Text.Trim(), out price);
+
+                        int stock = 0;
+                        int.TryParse(txtSL.Text.Trim(), out stock);
+
+                        int isActive = 1;
+                        try
+                        {
+                            if (cmbTrangThai != null && cmbTrangThai.SelectedItem != null)
+                                isActive = cmbTrangThai.SelectedItem.ToString() == "bán" ? 1 : 0;
+                        }
+                        catch { }
+
+                        cmd.Parameters.AddWithValue("@category_id", categoryId);
+                        cmd.Parameters.AddWithValue("@name", txtTenSP.Text.Trim());
+                        cmd.Parameters.AddWithValue("@price", price);
+                        cmd.Parameters.AddWithValue("@unit", txtGiaNhap.Text.Trim());
+                        cmd.Parameters.AddWithValue("@stock_quantity", stock);
+                        cmd.Parameters.AddWithValue("@description", txtMoTa.Text.Trim());
+                        cmd.Parameters.AddWithValue("@image_url", DBNull.Value);
+                        cmd.Parameters.AddWithValue("@is_active", isActive);
+
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Thêm sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadSanPham();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi thêm sản phẩm: " + ex.Message);
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtMaSP.Text))
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần xóa!");
+                return;
+            }
+
+            var confirm = MessageBox.Show("Bạn có chắc muốn xóa sản phẩm này không?",
+                                          "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirm == DialogResult.No)
+                return;
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "DELETE FROM products WHERE product_id = @product_id";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        int prodId = 0;
+                        int.TryParse(txtMaSP.Text.Trim(), out prodId);
+                        cmd.Parameters.AddWithValue("@product_id", prodId);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Xóa sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadSanPham();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi xóa sản phẩm: " + ex.Message);
+            }
+        }
+        private void ClearFields()
+        {
+            txtMaSP.Clear();
+            txtTenSP.Clear();
+            txtMoTa.Clear();
+            txtGiaNhap.Clear();
+            txtGiaBan.Clear();
+            txtSL.Clear();
+            txtLoai.Clear();
+            try { if (cmbTrangThai != null) cmbTrangThai.SelectedIndex = -1; } catch { }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtMaSP.Text))
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần sửa!");
+                return;
+            }
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = @"UPDATE products
+                             SET name=@name, description=@description, price=@price, unit=@unit,
+                                 stock_quantity=@stock_quantity, category_id=@category_id, image_url=@image_url, is_active=@is_active
+                             WHERE product_id=@product_id";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        int prodId = 0;
+                        int.TryParse(txtMaSP.Text.Trim(), out prodId);
+
+                        int categoryId = 0;
+                        int.TryParse(txtLoai.Text.Trim(), out categoryId);
+
+                        decimal price = 0m;
+                        decimal.TryParse(txtGiaBan.Text.Trim(), out price);
+
+                        int stock = 0;
+                        int.TryParse(txtSL.Text.Trim(), out stock);
+
+                        int isActive = 1;
+                        try
+                        {
+                            if (cmbTrangThai != null && cmbTrangThai.SelectedItem != null)
+                                isActive = cmbTrangThai.SelectedItem.ToString() == "bán" ? 1 : 0;
+                        }
+                        catch { }
+
+                        cmd.Parameters.AddWithValue("@product_id", prodId);
+                        cmd.Parameters.AddWithValue("@name", txtTenSP.Text.Trim());
+                        cmd.Parameters.AddWithValue("@description", txtMoTa.Text.Trim());
+                        cmd.Parameters.AddWithValue("@price", price);
+                        cmd.Parameters.AddWithValue("@unit", txtGiaNhap.Text.Trim());
+                        cmd.Parameters.AddWithValue("@stock_quantity", stock);
+                        cmd.Parameters.AddWithValue("@category_id", categoryId);
+                        cmd.Parameters.AddWithValue("@image_url", DBNull.Value);
+                        cmd.Parameters.AddWithValue("@is_active", isActive);
+
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Cập nhật sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadSanPham();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi sửa sản phẩm: " + ex.Message);
+            }
+        }
+    }
+}

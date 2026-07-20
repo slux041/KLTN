@@ -1,0 +1,206 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace GD
+{
+    public partial class DangKi : Form
+    {
+        private readonly string connectionString = "Server=127.0.0.1;Database=spathucung;user=root;password=;";
+
+        // Emoji labels used instead of embedded images (more reliable)
+        private Label lblEye1;
+        private Label lblEye2;
+        private bool isMatKhauVisible1 = false; // false = masked
+        private bool isMatKhauVisible2 = false;
+
+        public DangKi()
+        {
+            InitializeComponent();
+
+            // Ẩn ký tự mật khẩu
+            txtMatKhau.UseSystemPasswordChar = true;
+            txtNhapLaiMatKhau.UseSystemPasswordChar = true;
+
+            // Thêm chức vụ vào combobox
+            cbChucVu.Items.AddRange(new string[] { "Nhân viên", "Quản lý" });
+            cbChucVu.SelectedIndex = 0; // Mặc định là Nhân viên
+
+            // Make the eye icons clickable (pictureBoxes may not have valid resources)
+            pictureBox3.Cursor = Cursors.Hand;
+            pictureBox4.Cursor = Cursors.Hand;
+
+            // Hide the picture boxes (they were designed with images that may not toggle properly)
+            try
+            {
+                pictureBox3.Visible = false;
+                pictureBox4.Visible = false;
+            }
+            catch { }
+
+            // Create emoji labels on top of where the picture boxes are located
+            lblEye1 = new Label();
+            lblEye1.Size = pictureBox3.Size;
+            lblEye1.Location = pictureBox3.Location;
+            lblEye1.BackColor = Color.Transparent;
+            lblEye1.Text = "👁"; // indicates hidden (click to show)
+            lblEye1.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblEye1.TextAlign = ContentAlignment.MiddleCenter;
+            lblEye1.Cursor = Cursors.Hand;
+            lblEye1.Click += LblEye1_Click;
+            this.Controls.Add(lblEye1);
+            lblEye1.BringToFront();
+
+            lblEye2 = new Label();
+            lblEye2.Size = pictureBox4.Size;
+            lblEye2.Location = pictureBox4.Location;
+            lblEye2.BackColor = Color.Transparent;
+            lblEye2.Text = "👁";
+            lblEye2.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblEye2.TextAlign = ContentAlignment.MiddleCenter;
+            lblEye2.Cursor = Cursors.Hand;
+            lblEye2.Click += LblEye2_Click;
+            this.Controls.Add(lblEye2);
+            lblEye2.BringToFront();
+        }
+
+        private void LblEye1_Click(object sender, EventArgs e)
+        {
+            ToggleMatKhau();
+        }
+
+        private void LblEye2_Click(object sender, EventArgs e)
+        {
+            ToggleNhapLaiMatKhau();
+        }
+
+        private void ToggleMatKhau()
+        {
+            isMatKhauVisible1 = !isMatKhauVisible1;
+            txtMatKhau.UseSystemPasswordChar = !isMatKhauVisible1;
+            // Update emoji: eye for masked, monkey for visible
+            lblEye1.Text = isMatKhauVisible1 ? "🙈" : "👁";
+
+            // Try to swap pictureBox image if resources available (non-fatal)
+            try
+            {
+                if (isMatKhauVisible1)
+                    pictureBox3.Image = Properties.Resources.show; // whoever you set as 'show' represents visible state
+                else
+                    pictureBox3.Image = Properties.Resources.close;
+            }
+            catch { }
+        }
+
+        private void ToggleNhapLaiMatKhau()
+        {
+            isMatKhauVisible2 = !isMatKhauVisible2;
+            txtNhapLaiMatKhau.UseSystemPasswordChar = !isMatKhauVisible2;
+            lblEye2.Text = isMatKhauVisible2 ? "🙈" : "👁";
+
+            try
+            {
+                if (isMatKhauVisible2)
+                    pictureBox4.Image = Properties.Resources.show;
+                else
+                    pictureBox4.Image = Properties.Resources.close;
+            }
+            catch { }
+        }
+
+        private void btnDangKy_Click(object sender, EventArgs e)
+        {
+
+            string tenTK = txtDangNhap.Text.Trim();
+            string maNV = txtMaNV.Text.Trim();
+            string matKhau = txtMatKhau.Text.Trim();
+            string nhapLai = txtNhapLaiMatKhau.Text.Trim();
+            string chucVu = cbChucVu.SelectedItem?.ToString();
+
+            // Kiểm tra dữ liệu
+            if (string.IsNullOrEmpty(tenTK) || string.IsNullOrEmpty(maNV) ||
+                string.IsNullOrEmpty(matKhau) || string.IsNullOrEmpty(nhapLai))
+            {
+                MessageBox.Show(" Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (matKhau != nhapLai)
+            {
+                MessageBox.Show("❌ Mật khẩu và xác nhận mật khẩu không khớp!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Đăng ký tài khoản
+            DangKyTaiKhoan(tenTK, maNV, matKhau, chucVu);
+
+        }
+        private void DangKyTaiKhoan(string tenTK, string maNV, string matKhau, string chucVu)
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string sql = "INSERT INTO TaiKhoan (TenTK, MatKhau, MaNV, Quyen) VALUES (@tk, @mk, @manv, @q)";
+                    using (var cmd = new MySqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@tk", tenTK);
+                        cmd.Parameters.AddWithValue("@mk", matKhau);
+                        cmd.Parameters.AddWithValue("@manv", maNV);
+                        cmd.Parameters.AddWithValue("@q", chucVu.ToLower() == "quản lý" ? "admin" : "nhanvien");
+
+                        int rows = cmd.ExecuteNonQuery();
+
+                        if (rows > 0)
+                        {
+                            MessageBox.Show(" Đăng ký thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide(); // Ẩn form đăng ký
+                            DangNhap dangNhapForm = new DangNhap();
+                            dangNhapForm.ShowDialog(); // Mở form đăng nhập
+                            this.Close(); // Đóng form đăng ký
+                        }
+                        else
+                        {
+                            MessageBox.Show("❌ Đăng ký thất bại. Vui lòng thử lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.Contains("Duplicate entry"))
+                {
+                    MessageBox.Show(" Tên tài khoản đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (ex.Message.Contains("foreign key constraint fails"))
+                {
+                    MessageBox.Show(" Mã nhân viên không tồn tại trong hệ thống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi kết nối database:\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            // keep compatibility with designer click
+            ToggleMatKhau();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            ToggleNhapLaiMatKhau();
+        }
+    }
+}
+
